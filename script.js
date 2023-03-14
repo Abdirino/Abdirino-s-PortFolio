@@ -1,7 +1,7 @@
 // on-scroll animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
+        // console.log(entry);
         if(entry.isIntersecting){
             entry.target.classList.add('show')
         }else{
@@ -85,6 +85,14 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxcDxnOXn2Xmgx7C24EnO
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
 // end copyright
+
+const barMenu = document.querySelector(".checkbtn");
+
+barMenu.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    barMenu.classList.toggle("active");
+}
 
 
 
