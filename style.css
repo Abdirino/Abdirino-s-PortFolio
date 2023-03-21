@@ -108,8 +108,8 @@ header {
   /* color: black; */
   border-radius: 5px;
 }
-.nav-link:active {
-  /* background-color: #1a575c; */
+.nav-item i{
+  color: #fff;
 }
 .nav-link::before {
   content: "";
@@ -528,7 +528,7 @@ header {
 .project .content .img {
   cursor: pointer;
   flex: 1 1 400px;
-  height: 350px;
+  /* height: 350px; */
   width: 350px;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.76);
 }

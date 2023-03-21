@@ -1,167 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdirahman's PortFolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("Pr-4H4xBr6MljTcGR");
-        })();
+      (function () {
+        emailjs.init("Pr-4H4xBr6MljTcGR");
+      })();
     </script>
-    <link rel="website icon" type="png" href="images/ux.png">
-</head>
-<!-- oncontextmenu="return false" -->
+    <link rel="website icon" type="png" href="images/ux.png" />
+  </head>
+  <!-- oncontextmenu="return false" -->
 
-<body>
+  <body>
     <!-- nav sec -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#" class="nav-branding">A-R</a>
-            </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </label>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#" class="nav-branding">A-R</a>
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
 
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#service" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#project" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-circle-info"></i>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-computer"></i>
+            <a href="#service" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <a href="#project" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-address-book"></i>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- end nav sec -->
 
     <!-- home sec  -->
-    <div id="particles-js" style="position: absolute; width: 100%; height: 100%;"></div>
+    <div
+      id="particles-js"
+      style="position: absolute; width: 100%; height: 100%"
+    ></div>
     <div class="home" id="home">
-        <div></div>
-        <div class="greet hidden">
-            <h1>Front End Developer</h1>
-            <h1>Hi, My name is,</h1>
-            <h1>Abdi - Rahman Abdulaziz</h1>
-        </div>
+      <div></div>
+      <div class="greet hidden">
+        <h1>Front End Developer</h1>
+        <h1>Hi, My name is,</h1>
+        <h1>Abdi - Rahman Abdulaziz</h1>
+      </div>
     </div>
 
     <!-- end home sec  -->
 
     <!-- about sec -->
     <div class="about" id="about">
-        <div class="about-me">
-            <h1 class="hidden">About Me<span>.</span></h1>
-            <p class="hidden">Hi, i'm Abdi. I am a Front end developer.
-                I have serious passion for creating responsive, feature rich websites with great user experience.
-                My goal is to introduce my skills to a company that is energetic, reputable and successful and i am
-                always eager to learn new things and grow as a developer.
-            </p>
-            <div class="buttons hidden">
-                <a href="#" class="hidden">Resume</a>
-                <a href="#contact" class="hidden">Hire Me</a>
-            </div>
+      <div class="about-me">
+        <h1 class="hidden">About Me<span>.</span></h1>
+        <p class="hidden">
+          Hi, i'm Abdi. I am a Front end developer. I have serious passion for
+          creating responsive, feature rich websites with great user experience.
+          My goal is to introduce my skills to a company that is energetic,
+          reputable and successful and i am always eager to learn new things and
+          grow as a developer.
+        </p>
+        <div class="buttons hidden">
+          <a href="#" class="hidden">Resume</a>
+          <a href="#contact" class="hidden">Hire Me</a>
         </div>
-        <div class="img hidden">
-            <img src="images/booting-up-developer-economy-how-tech-startups-are-helping-coders-build-and-test-software-faster.webp"
-                alt="">
-        </div>
+      </div>
+      <div class="img hidden">
+        <img
+          src="images/booting-up-developer-economy-how-tech-startups-are-helping-coders-build-and-test-software-faster.webp"
+          alt=""
+        />
+      </div>
     </div>
     <!-- end about sec -->
 
     <!-- service sec -->
 
     <div class="service" id="service">
-        <h1>My Services</h1>
-        <div class="contents">
-            <div class="content hidden">
-                <div class="up-content">
-                    <div class="icon">
-                        <img src="images/illustration.png" alt="">
-                    </div>
-                    <h1>Website Design</h1>
-                    <p>My objective as a web designer, is to make a positive impact on clients and co-workers
-                        using my skills and experience to design compelling and attractive websites.
-                    </p>
-                </div>
+      <h1>My Services</h1>
+      <div class="contents">
+        <div class="content hidden">
+          <div class="up-content">
+            <div class="icon">
+              <img src="images/illustration.png" alt="" />
             </div>
-            <div class="content hidden">
-                <div class="up-content">
-                    <div class="icon">
-                        <img src="images/coding.png" alt="">
-                    </div>
-                    <h1>Website Development</h1>
-                    <p>
-                        As a web developer, my primary role is to ensure the website is visually appealing and easy to
-                        navigate.
-                    </p>
-                </div>
-            </div>
-            <div class="content hidden">
-                <div class="up-content">
-                    <div class="icon">
-                        <img src="images/mobile-app.png" alt="">
-                    </div>
-                    <h1>UI/UX Design</h1>
-                    <p>
-                        My main focuse as a UI/UX Designer is creating a positive and satisfying experience for the user by optimizing the usability, accessibility, and desirability of the product.
-                    </p>
-                </div>
-            </div>
+            <h1>Website Design</h1>
+            <p>
+              My objective as a web designer, is to make a positive impact on
+              clients and co-workers using my skills and experience to design
+              compelling and attractive websites.
+            </p>
+          </div>
         </div>
+        <div class="content hidden">
+          <div class="up-content">
+            <div class="icon">
+              <img src="images/coding.png" alt="" />
+            </div>
+            <h1>Website Development</h1>
+            <p>
+              As a web developer, my primary role is to ensure the website is
+              visually appealing and easy to navigate.
+            </p>
+          </div>
+        </div>
+        <div class="content hidden">
+          <div class="up-content">
+            <div class="icon">
+              <img src="images/mobile-app.png" alt="" />
+            </div>
+            <h1>UI/UX Design</h1>
+            <p>
+              My main focuse as a UI/UX Designer is creating a positive and
+              satisfying experience for the user by optimizing the usability,
+              accessibility, and desirability of the product.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <div class="p-lang hidden">
-            <div class="class">
-                <i class='bx bxl-html5' style='color:#fa590f'></i>
-                <p>HTML</p>
-            </div>
-            <div class="class">
-                <i class='bx bxl-css3' style='color:#0f88fa'></i>
-                <p>CSS</p>
-            </div>
-            <div class="class">
-                <i class='bx bxl-bootstrap' style='color:#8d02f9'></i>
-                <p>BOOTSTRAP</p>
-            </div>
-            <div class="class">
-                <i class='bx bxl-javascript' style='color:#fadc0f'></i>
-                <p>JAVASCRIPT</p>
-            </div>
-            <!-- <div class="class">
-                <i class='bx bxl-typescript' style='color:#0565ab'  ></i>
-                <p>TYPESCRIPT</p>
-            </div> -->
-            <div class="class">
-                <i class='bx bxl-react' style='color:#00ecff'></i>
-                <p>REACT JS</p>
-            </div>
-            <div class="class">
-                <i class='bx bxl-figma' style='color:#e33e0a'></i>
-                <p>FIGMA</p>
-            </div>
-            <!-- <div class="class">
+      <div class="p-lang hidden">
+        <div class="class">
+          <i class="bx bxl-html5" style="color: #fa590f"></i>
+          <p>HTML</p>
+        </div>
+        <div class="class">
+          <i class="bx bxl-css3" style="color: #0f88fa"></i>
+          <p>CSS</p>
+        </div>
+        <div class="class">
+          <i class="bx bxl-bootstrap" style="color: #8d02f9"></i>
+          <p>BOOTSTRAP</p>
+        </div>
+        <div class="class">
+          <i class="bx bxl-javascript" style="color: #fadc0f"></i>
+          <p>JAVASCRIPT</p>
+        </div>
+        <div class="class">
+          <i class="bx bxl-typescript" style="color: #0565ab"></i>
+          <p>TYPESCRIPT</p>
+        </div>
+        <div class="class">
+          <i class="bx bxl-react" style="color: #00ecff"></i>
+          <p>REACT JS</p>
+        </div>
+        <div class="class">
+          <i class="bx bxl-figma" style="color: #e33e0a"></i>
+          <p>FIGMA</p>
+        </div>
+        <!-- <div class="class">
                 <i class='bx bxl-nodejs' style='color:#29a41a'></i>
                 <p>NODE JS</p>
             </div>
@@ -169,130 +199,182 @@
                 <i class='bx bxl-mongodb' style='color:#29a41a'></i>
                 <p>MONGODB</p>
             </div> -->
-            <div class="class">
-                <i class='bx bxl-firebase' style='color:#d7bc12'  ></i>
-                <p>FIREBASE</p>
-            </div>
-            <div class="class">
-                <i class='bx bxl-github' style='color:#2a141e'></i>
-                <p>GITHUB</p>
-            </div>
-            <div class="class">
-                <i class='bx bxl-git' style='color:#ff3d00'></i>
-                <p>GIT</p>
-            </div>
+        <div class="class">
+          <i class="bx bxl-github" style="color: #2a141e"></i>
+          <p>GITHUB</p>
         </div>
-
+        <div class="class">
+          <i class="bx bxl-git" style="color: #ff3d00"></i>
+          <p>GIT</p>
+        </div>
+      </div>
     </div>
     <!-- end service sec -->
 
     <!-- project sec -->
     <div class="project" id="project">
-        <div class="head">
-            <h1>Projects</h1>
-            <!-- <a href="https://github.com/Abdirino" target="_blank">Github Link</a> -->
-        </div>
+      <div class="head">
+        <h1>Projects</h1>
+        <!-- <a href="https://github.com/Abdirino" target="_blank">Github Link</a> -->
+      </div>
 
-        <div class="content hidden">
-            <div class="img">
-                <img src="images/Capture.PNG" alt="">
-            </div>
-            <div class="detail">
-                <h2>My Portfolio</h2>
-                <p>
-                    This Portfolio was one of my best projects. A lot of re-work has been done
-                    from the bare-bones HTML document that this site once was.
-                </p>
-                <div class="links">
-                    <a href="https://abdirino.github.io/My-PortFolio/" target="_blank"><i
-                            class='bx bx-right-top-arrow-circle'></i></a>
-                    <a href="https://github.com/Abdirino/My-PortFolio" target="_blank"><i class='bx bxl-github'
-                            style='color:#2a141e'></i></a>
-                </div>
-                <div class="tech">
-                    <h3>Technologies Used</h3>
-                    <div class="techi">
-                        <i class='bx bxl-html5' style='color:#fa590f'></i>
-                        <i class='bx bxl-css3' style='color:#0f88fa'></i>
-                        <i class='bx bxl-javascript' style='color:#fadc0f'></i>
-                    </div>
-                </div>
-            </div>
+      <div class="content hidden">
+        <div class="img">
+          <img src="images/Capture.PNG" alt="" />
         </div>
+        <div class="detail">
+          <h2>My Portfolio</h2>
+          <p>
+            Experience the power of stunning web design with my front-end
+            development portfolio. With a passion for creating beautiful,
+            functional websites, I specialize in crafting seamless user
+            experiences that captivate and inspire.
+          </p>
+          <div class="links">
+            <a
+              href="https://golden-sunset-travel-agency.netlify.app"
+              target="_blank"
+              ><i class="bx bx-right-top-arrow-circle"></i
+            ></a>
+            <a href="https://github.com/Abdirino/My-PortFolio" target="_blank"
+              ><i class="bx bxl-github" style="color: #2a141e"></i
+            ></a>
+          </div>
+          <div class="tech">
+            <h3>Technologies Used</h3>
+            <div class="techi">
+              <i class="bx bxl-html5" style="color: #fa590f"></i>
+              <i class="bx bxl-css3" style="color: #0f88fa"></i>
+              <i class="bx bxl-javascript" style="color: #fadc0f"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="content hidden">
-            <div class="img">
-                <img src="images/2023-02-14.png" alt="">
-            </div>
-            <div class="detail">
-                <h2>Edge Mart</h2>
-                <p>
-                    Edge Mart is an E-Commerce website for the latest and greatest in technology, fashion, and lifestyle products. Stay ahead of the curve with our cutting-edge selection of gear and gadgets, as well as stylish apparel. Discover what's next at Edge Mart.
-                </p>
-                <div class="links">
-                    <a href="https://abdirino.github.io/E-Shop/" target="_blank"><i
-                            class='bx bx-right-top-arrow-circle'></i></a>
-                    <a href="https://github.com/Abdirino/E-Shop" target="_blank"><i class='bx bxl-github'
-                            style='color:#2a141e'></i></a>
-                </div>
-                <div class="tech">
-                    <h3>Technologies Used</h3>
-                    <div class="techi">
-                        <i class='bx bxl-html5' style='color:#fa590f'></i>
-                        <i class='bx bxl-css3' style='color:#0f88fa'></i>
-                        <i class='bx bxl-javascript' style='color:#fadc0f'></i>
-                    </div>
-                </div>
-            </div>
+      <div class="content hidden">
+        <div class="img">
+          <img src="images/Golden-Sunset.png" alt="" />
         </div>
+        <div class="detail">
+          <h2>Golden Sunset</h2>
+          <p>
+            Golden Sunset is a worldwide travel agency committed to curating
+            exceptional journeys that inspire and delight. We specialize in
+            crafting personalized itineraries that cater to your unique
+            interests and preferences, whether you're seeking adventure,
+            relaxation, or cultural immersion. From stunning sunsets to
+            awe-inspiring landscapes, let Golden Sunset take you on an
+            unforgettable journey around the world.
+          </p>
+          <div class="links">
+            <a href="https://golden-sunset-travel-agency.netlify.app" target="_blank"
+              ><i class="bx bx-right-top-arrow-circle"></i
+            ></a>
+            <a
+              href="https://github.com/Abdirino/sunset-travel-website"
+              target="_blank"
+              ><i class="bx bxl-github" style="color: #2a141e"></i
+            ></a>
+          </div>
+          <div class="tech">
+            <h3>Technologies Used</h3>
+            <div class="techi">
+              <i class="bx bxl-html5" style="color: #fa590f"></i>
+              <i class="bx bxl-css3" style="color: #0f88fa"></i>
+              <i class="bx bxl-javascript" style="color: #fadc0f"></i>
+              <i class="bx bxl-react" style="color: #00ecff"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content hidden">
+        <div class="img">
+          <img src="images/2023-02-14.png" alt="" />
+        </div>
+        <div class="detail">
+          <h2>Edge Mart</h2>
+          <p>
+            Edge Mart is an E-Commerce website for the latest and greatest in
+            technology, fashion, and lifestyle products. Stay ahead of the curve
+            with our cutting-edge selection of gear and gadgets, as well as
+            stylish apparel. Discover what's next at Edge Mart.
+          </p>
+          <div class="links">
+            <a href="https://abdirino.github.io/E-Shop/" target="_blank"
+              ><i class="bx bx-right-top-arrow-circle"></i
+            ></a>
+            <a href="https://github.com/Abdirino/E-Shop" target="_blank"
+              ><i class="bx bxl-github" style="color: #2a141e"></i
+            ></a>
+          </div>
+          <div class="tech">
+            <h3>Technologies Used</h3>
+            <div class="techi">
+              <i class="bx bxl-html5" style="color: #fa590f"></i>
+              <i class="bx bxl-css3" style="color: #0f88fa"></i>
+              <i class="bx bxl-javascript" style="color: #fadc0f"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end project sec -->
 
     <!-- contact sec -->
     <div class="contact" id="contact">
-        <div class="row">
-            <div class="contact-left hidden">
-                <h1>"Let's work together"</h1>
-                <h2>Contact Me</h2>
-                <p><i class='bx bx-mail-send'></i>abdirinoahash@gmail.com</p>
-                <p><i class='bx bxs-phone'></i>+254 708 299034</p>
-                <div class="social-icons">
-                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class='bx bxl-gmail'></i></a>
-                    <a href="https://twitter.com/home" target="_blank"><i class='bx bxl-twitter'></i></a>
-                    <!-- <a href=""><i class='bx bxl-youtube'></i></a> -->
-                    <a href="https://www.linkedin.com/in/abdirahman-abdulaziz/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="https://github.com/Abdirino" target="_blank"><i class='bx bxl-github'></i>
-                    </a>
-                </div>
-                <i onclick="toTop()" class='bx bxs-up-arrow-square'></i>
-            </div>
-
-            <div class="contact-right hidden">
-                <form name="submit-to-google-sheet" autocomplete="off">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email">
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
-                    <button type="submit">Send</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+      <div class="row">
+        <div class="contact-left hidden">
+          <h1>"Let's work together"</h1>
+          <h2>Contact Me</h2>
+          <p><i class="bx bx-mail-send"></i>abdirinoahash@gmail.com</p>
+          <p><i class="bx bxs-phone"></i>+254 708 299034</p>
+          <div class="social-icons">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="https://twitter.com/home" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <!-- <a href=""><i class='bx bxl-youtube'></i></a> -->
+            <a
+              href="https://www.linkedin.com/in/abdirahman-abdulaziz/"
+              target="_blank"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a href="https://github.com/Abdirino" target="_blank"
+              ><i class="bx bxl-github"></i>
+            </a>
+          </div>
+          <i onclick="toTop()" class="bx bxs-up-arrow-square"></i>
         </div>
+
+        <div class="contact-right hidden">
+          <form name="submit-to-google-sheet" autocomplete="off">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea
+            ><br />
+            <button type="submit">Send</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
     </div>
     <!-- end contact sec -->
     <!-- copy right -->
     <div class="copy">
-        <p class="hidden">
-            Copyright&copy;
-            <span id="year"></span>
-            @Abdirino_Ahash
-        </p>
+      <p class="hidden">
+        Copyright&copy;
+        <span id="year"></span>
+        @Abdirino_Ahash
+      </p>
     </div>
     <!-- end copy right -->
-
-
-
-
-
 
     <!-- particle.js  -->
     <script src="particles.js" defer></script>
@@ -302,9 +384,8 @@
     <!-- scroll animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <!-- end scroll animation -->
-</body>
-
+  </body>
 </html>
