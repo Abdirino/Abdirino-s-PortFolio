@@ -29,7 +29,7 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
-  /* transition: .2s linear; */
+  transition: .2s ease;
 }
 title {
   font-family: aquire;
@@ -225,8 +225,17 @@ header {
 .home .greet h1 {
   font-family: aquire;
   padding: 5px 18px;
-  line-height: 44px;
+  /* line-height: 44px; */
+  padding-bottom: 15px;
   font-size: 60px;
+  font-weight: bold;
+}
+.home .greet h3 {
+  font-family: aquire;
+  padding: 5px 18px;
+  /* line-height: 44px; */
+  padding-bottom: 12px;
+  font-size: 30px;
   font-weight: bold;
 }
 .home .greet h1:nth-child(1),
@@ -281,12 +290,12 @@ header {
     background: #063c42;
   }
 }
-@media (max-width: 1070px) {
+@media (max-width: 970px) {
   .home .greet h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 45px;
+    font-size: 47px;
   }
 }
 
@@ -569,7 +578,7 @@ header {
   /* width: fit-content; */
   font-family: aquire;
   border-bottom: 3px solid aquamarine;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+  background: linear-gradient(to right, rgb(57, 57, 218), rgb(5, 152, 210));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -618,6 +627,19 @@ header {
   font-size: 30px;
   transition: 0.4s ease;
   cursor: pointer;
+}
+@media(max-width:990px){
+  .project .head h1{
+    font-size: 35px;
+  }
+  /* .content .detail p{
+    display: none;
+  } */
+}
+@media(max-width:430px){
+  .content .detail p{
+    display: none;
+  }
 }
 /* end project sec */
 
