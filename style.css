@@ -31,6 +31,12 @@
   text-transform: capitalize;
   transition: .2s ease;
 }
+* h1{
+  text-shadow: -2px 2px 0 #10d1d1,
+              -4px 4px 0 #0f98a7,
+              -6px 6px 0 #0f82a9,
+              -8px 8px 0 #0b484b;
+}
 title {
   font-family: aquire;
 }
@@ -226,8 +232,8 @@ header {
   font-family: aquire;
   padding: 5px 18px;
   /* line-height: 44px; */
-  padding-bottom: 15px;
-  font-size: 60px;
+  padding-bottom: 20px;
+  font-size: 70px;
   font-weight: bold;
 }
 .home .greet h3 {
@@ -295,7 +301,17 @@ header {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 47px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 600px) {
+  .home .greet h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 460px) {
+  .home .greet h1 {
+    font-size: 25px;
   }
 }
 
@@ -442,7 +458,7 @@ header {
 .service .content:nth-child(3) {
   transition-delay: 400ms;
 }
-.service .content .up-content h1 {
+.service .content .up-content h2 {
   font-size: 25px;
   padding: 25px 0 15px 0;
   font-family: aquire;
