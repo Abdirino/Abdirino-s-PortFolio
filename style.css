@@ -255,23 +255,20 @@ header {
   font-family: "Poppins", sans-serif;
   line-height: 30px;
 }
-.home .greet .resume {
-  padding: 12px 25px;
-  border-radius: 4px;
-  display: block;
+.greet .home-socials{
+  display: flex;
+	justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  /* margin: 10px 18px; */
+  border-radius: 10px;
   width: fit-content;
-  font-family: aquire;
-  font-size: 22px;
-  border: 2px solid aqua;
-  margin: 18px;
-  background: rgb(0, 0, 0);
-  color: rgb(0, 191, 255);
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s ease;
 }
-.home .greet .resume:hover {
-  box-shadow: 0 0 60px aqua;
+.home .greet a{
+  font-size: 40px;
+  padding-right: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 @-webkit-keyframes color-change-3x {
@@ -306,12 +303,7 @@ header {
 }
 @media (max-width: 600px) {
   .home .greet h1 {
-    font-size: 32px;
-  }
-}
-@media (max-width: 460px) {
-  .home .greet h1 {
-    font-size: 25px;
+    font-size: 38px;
   }
 }
 
@@ -601,7 +593,6 @@ header {
 }
 .project .content .detail p {
   font-size: 17px;
-  gap: 3px;
   font-family: "Poppins", sans-serif;
   margin: 5px;
   padding: 5px;
@@ -648,15 +639,12 @@ header {
   .project .head h1{
     font-size: 35px;
   }
-  /* .content .detail p{
-    display: none;
-  } */
 }
-@media(max-width:430px){
+/* @media(max-width:430px){
   .content .detail p{
     display: none;
   }
-}
+} */
 /* end project sec */
 
 /* contact sec */
