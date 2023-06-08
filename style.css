@@ -298,12 +298,7 @@ header {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 42px;
-  }
-}
-@media (max-width: 600px) {
-  .home .greet h1 {
-    font-size: 38px;
+    font-size: 45px;
   }
 }
 
@@ -518,6 +513,11 @@ header {
 /* project sec */
 .project {
   padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 .project .head {
   display: flex;

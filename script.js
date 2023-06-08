@@ -15,28 +15,16 @@ hiddenElements.forEach((el) => observer.observe(el))
 // end on-scroll animation
 
 // nav reveal on-scroll
-const body = document.body;
-let lastScroll = 0;
-
-window.addEventListener("scroll", () => {
-	const currentScroll = window.pageYOffset;
-	if (currentScroll <= 0) {
-		body.classList.remove("scroll-up");
-		return;
-	}
-
-	if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-		body.classList.remove("scroll-up");
-		body.classList.add("scroll-down");
-	} else if (
-		currentScroll < lastScroll &&
-		body.classList.contains("scroll-down")
-	) {
-		body.classList.remove("scroll-down");
-		body.classList.add("scroll-up");
-	}
-	lastScroll = currentScroll;
-});
+let prevScroll = window.pageYOffset;
+window.onscroll = function() {
+    let currentScroll = window.pageYOffset;
+    if(prevScroll > currentScroll) {
+        document.getElementsByClassName("navbar").style.top = "0";
+    }else{
+        document.getElementsByClassName("navbar").style.top = "-60px";
+    }
+    prevScroll = currentScroll;
+}
 
 //end nav reveal on-scroll
 
