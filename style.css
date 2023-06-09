@@ -30,6 +30,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   transition: .2s ease;
+  cursor: url(images/3d-pointer-28.png), default;
 }
 * h1{
   text-shadow: -2px 2px 0 #10d1d1,
@@ -227,13 +228,17 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .home .greet h1 {
   font-family: aquire;
   padding: 5px 18px;
   /* line-height: 44px; */
   padding-bottom: 20px;
-  font-size: 70px;
+  font-size: 75px;
   font-weight: bold;
 }
 .home .greet h3 {
@@ -268,7 +273,6 @@ header {
   font-size: 40px;
   padding-right: 20px;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 
 @-webkit-keyframes color-change-3x {
@@ -487,12 +491,10 @@ header {
   font-family: aquire;
   color: aqua;
   font-size: 12px;
-  cursor: pointer;
 }
 .p-lang i {
   font-size: 45px;
   padding: 10px 22px;
-  cursor: pointer;
   transition: all 0.4s ease;
 }
 .p-lang i:hover {
@@ -556,13 +558,14 @@ header {
 }
 .project .content:nth-child(even) {
   flex-direction: row-reverse;
+  border-radius: 0 5px 5px 0;
 }
 .project .content .img {
-  cursor: pointer;
   flex: 1 1 400px;
   /* height: 350px; */
   width: 350px;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 8px 32px #000000c2;
+  overflow: hidden;
 }
 .project .content .img img {
   height: 100%;
@@ -570,7 +573,7 @@ header {
   object-fit: cover;
   transition: all 0.5s ease;
 }
-.project .content .img img:hover {
+.project .content:hover .img img {
   transform: scale(1.04);
 }
 .project .content .detail {
@@ -604,7 +607,6 @@ header {
   margin: 5px auto;
   font-size: 35px;
   color: rgb(5, 97, 97);
-  cursor: pointer;
   transition: all 0.5s ease;
 }
 .project .content .detail i:hover {
@@ -633,18 +635,12 @@ header {
   margin: 5px;
   font-size: 30px;
   transition: 0.4s ease;
-  cursor: pointer;
 }
 @media(max-width:990px){
   .project .head h1{
     font-size: 35px;
   }
 }
-/* @media(max-width:430px){
-  .content .detail p{
-    display: none;
-  }
-} */
 /* end project sec */
 
 /* contact sec */
@@ -700,7 +696,6 @@ header {
   margin-top: 30px;
 }
 .social-icons a i {
-  cursor: pointer;
   font-size: 35px;
   margin-right: 15px;
   color: aqua;
@@ -743,7 +738,6 @@ form button {
   font-size: 20px;
   border-radius: 4px;
   font-family: aquire;
-  cursor: pointer;
   transition: 0.4s ease;
 }
 form button:hover {
