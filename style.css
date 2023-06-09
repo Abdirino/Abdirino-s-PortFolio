@@ -703,14 +703,16 @@ header {
   transition: all 0.4s ease;
 }
 .social-icons i:hover {
-  transform: scale(1.25);
+  transform: scale(1.12);
 }
 .contact-left .bxs-up-arrow-square {
   color: aqua;
   font-size: 35px;
   text-align: center;
   margin-top: 30px;
-  cursor: pointer;
+}
+.contact-left .bxs-up-arrow-square:hover {
+  transform: scale(1.1);
 }
 .contact-right form {
   width: 100%;
