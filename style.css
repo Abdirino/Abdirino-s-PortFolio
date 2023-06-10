@@ -515,11 +515,11 @@ header {
 /* project sec */
 .project {
   padding: 40px 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  text-align: center; */
 }
 .project .head {
   display: flex;
@@ -588,7 +588,7 @@ header {
   padding: 4px;
   /* width: fit-content; */
   font-family: aquire;
-  border-bottom: 3px solid aquamarine;
+  border-bottom: 3px solid rgb(15, 201, 139);
   background: linear-gradient(to right, rgb(57, 57, 218), rgb(5, 152, 210));
   -webkit-background-clip: text;
   background-clip: text;
