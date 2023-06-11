@@ -199,7 +199,7 @@ header {
     gap: 0;
     flex-direction: column;
     background-color: #181524;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     transition: 0.3s;
   }
@@ -238,7 +238,7 @@ header {
   padding: 5px 18px;
   /* line-height: 44px; */
   padding-bottom: 20px;
-  font-size: 75px;
+  font-size: 72px;
   font-weight: bold;
 }
 .home .greet h3 {
@@ -297,12 +297,12 @@ header {
     background: #063c42;
   }
 }
-@media (max-width: 970px) {
+@media (max-width: 990px) {
   .home .greet h3 {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 45px;
+    font-size: 49px;
   }
 }
 
@@ -329,6 +329,7 @@ header {
   font-size: 35px;
   font-weight: bold;
   margin: 24px;
+  padding: 5px;
   background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
   -webkit-background-clip: text;
   background-clip: text;
