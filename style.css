@@ -60,7 +60,7 @@ h1 h3 p {
 }
 /* nav sec */
 header {
-  background-color: #1d173481;
+  background-color: rgba(64, 95, 105, 0.6);
   position: fixed;
   top: 0;
   right: 0;
@@ -219,8 +219,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: color-change-3x 4s linear infinite alternate both;
-  animation: color-change-3x 4s linear infinite alternate both;
+  background: black;
+  /* -webkit-animation: color-change-3x 4s linear infinite alternate both;
+  animation: color-change-3x 4s linear infinite alternate both; */
 }
 .home .greet {
   font-weight: bold;
@@ -590,7 +591,8 @@ header {
   /* width: fit-content; */
   font-family: aquire;
   border-bottom: 3px solid rgb(15, 201, 139);
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(5, 152, 210));
+  color: aquamarine;
+  background: linear-gradient(to right, rgb(57, 57, 218), rgb(9, 139, 151));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
