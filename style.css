@@ -29,14 +29,12 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
-  transition: .2s ease;
+  transition: 0.2s ease;
   cursor: url(images/3d-pointer-28.png), default;
 }
-* h1{
-  text-shadow: -2px 2px 0 #10d1d1,
-              -4px 4px 0 #0f98a7,
-              -6px 6px 0 #0f82a9,
-              -8px 8px 0 #0b484b;
+* h1 {
+  text-shadow: -2px 2px 0 #10d1d1, -4px 4px 0 #0f98a7, -6px 6px 0 #0f82a9,
+    -8px 8px 0 #0b484b;
 }
 title {
   font-family: aquire;
@@ -60,7 +58,7 @@ h1 h3 p {
 }
 /* nav sec */
 header {
-  background-color: rgba(64, 95, 105, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   right: 0;
@@ -261,16 +259,16 @@ header {
   font-family: "Poppins", sans-serif;
   line-height: 30px;
 }
-.greet .home-socials{
+.greet .home-socials {
   display: flex;
-	justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 12px 14px;
   /* margin: 10px 18px; */
   border-radius: 10px;
   width: fit-content;
 }
-.home .greet a{
+.home .greet a {
   font-size: 40px;
   padding-right: 20px;
   transition: 0.3s ease;
@@ -429,7 +427,7 @@ header {
   -o-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-.service .contents .content {
+.service .contents .card {
   width: 300px;
   height: 380px;
   display: flex;
@@ -438,41 +436,77 @@ header {
   flex-direction: column;
   text-align: start;
   padding: 15px 20px;
-  border-radius: 5px;
   margin: 20px;
   overflow: hidden;
-  z-index: 1;
+  /* z-index: 1; */
   background: #181524;
-  box-shadow: 0 0 32px rgb(5, 146, 156);
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+  border-radius: 20px;
 }
-.service .content:nth-child(2) {
+.service .contents .card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 51, 255),
+    rgb(48, 241, 255)
+  );
+  height: 130%;
+  animation: rotBGImg 3s linear infinite;
+  transition: all 0.3s linear;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}
+@keyframes rotBGImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.service .card:nth-child(2) {
   transition-delay: 200ms;
 }
-.service .content:nth-child(3) {
+.service .card:nth-child(3) {
   transition-delay: 400ms;
 }
-.service .content .up-content h2 {
-  font-size: 25px;
+.service .card .up-content h2 {
+  font-size: 23px;
   padding: 25px 0 15px 0;
   font-family: aquire;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+  background: linear-gradient(to right, rgb(16, 16, 223), rgb(6, 225, 245));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
 }
-.service .content .up-content p {
+.service .card .up-content p {
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
-  font-size: 17px;
+  font-size: 18px;
   color: #3cd3e7;
+  position: relative;
+  z-index: 2;
 }
-.service .content .up-content .icon {
-  width: 50px;
-  height: 50px;
+.service .card .up-content .icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 2;
 }
-.service .content .up-content .icon img {
+.service .card .up-content .icon img {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 .p-lang {
   margin-top: 15px;
@@ -507,7 +541,7 @@ header {
   .p-lang {
     flex-wrap: wrap;
   }
-  .contents{
+  .contents {
     flex-wrap: wrap;
   }
 }
@@ -517,6 +551,7 @@ header {
 /* project sec */
 .project {
   padding: 40px 0;
+  background: rgba(0, 0, 0, 0.2);
   /* display: flex;
   justify-content: center;
   align-items: center;
@@ -581,24 +616,24 @@ header {
 .project .content .detail {
   flex: 1 1 400px;
   text-align: center;
-  background: rgba(127, 255, 212, 0.581);
-  box-shadow: 3px 6px 18px rgb(10, 69, 69);
+  background: #1ddfbf6f;
+  box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2);
 }
 .project .content .detail h2 {
-  font-size: 23px;
+  font-size: 28px;
   margin: 10px;
-  padding: 4px;
+  padding: 6px;
   /* width: fit-content; */
   font-family: aquire;
   border-bottom: 3px solid rgb(15, 201, 139);
   color: aquamarine;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(9, 139, 151));
+  background: linear-gradient(to right, rgb(13, 13, 228), rgb(0, 234, 255));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .project .content .detail p {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
   margin: 5px;
   padding: 5px;
@@ -616,13 +651,13 @@ header {
   transform: scale(1.2);
 }
 .project .content .detail .tech h3 {
-  font-size: 18px;
+  font-size: 19px;
   margin: 6px;
-  padding: 4px;
+  padding: 6px;
   /* width: fit-content; */
   font-family: aquire;
-  border-bottom: 3px solid rgb(134, 245, 208);
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+  border-bottom: 3px solid rgb(34, 207, 178);
+  background: linear-gradient(to right, rgb(12, 12, 249), rgb(1, 234, 255));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -639,8 +674,8 @@ header {
   font-size: 30px;
   transition: 0.4s ease;
 }
-@media(max-width:990px){
-  .project .head h1{
+@media (max-width: 990px) {
+  .project .head h1 {
     font-size: 35px;
   }
 }
