@@ -559,10 +559,6 @@ header {
 .project {
   padding: 40px 0;
   background: rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
 }
 .project .head {
@@ -706,20 +702,9 @@ header {
   flex: 1 1 500px;
 }
 .contact-left h1 {
-  font-size: 34px;
+  font-size: 35px;
   margin: 10px 0;
-  padding: 6px 0;
-  width: fit-content;
-  font-family: aquire;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.contact-left h2 {
-  font-size: 30px;
-  margin: 10px 0;
-  padding: 8px 0;
+  padding: 15px 0;
   width: fit-content;
   font-family: aquire;
   background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
