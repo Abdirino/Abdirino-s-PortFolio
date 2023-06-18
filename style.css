@@ -122,7 +122,7 @@ header {
   left: 0;
   top: 45px;
   width: 100%;
-  height: 5px;
+  height: 4px;
   background: rgb(25, 198, 198);
   z-index: -1;
   transition: transform 0.5s;
@@ -304,6 +304,14 @@ header {
     font-size: 49px;
   }
 }
+@media (max-width: 480px) {
+  .home .greet h3 {
+    font-size: 20px;
+  }
+  .home .greet h1 {
+    font-size: 39px;
+  }
+}
 
 /* end home sec */
 
@@ -441,17 +449,13 @@ header {
   /* z-index: 1; */
   background: #181524;
   box-shadow: 0 0 8px rgb(0, 0, 0);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .service .contents .card::before {
   content: "";
   position: absolute;
   width: 100px;
-  background-image: linear-gradient(
-    180deg,
-    rgb(0, 51, 255),
-    rgb(48, 241, 255)
-  );
+  background-image: linear-gradient(180deg, rgb(0, 51, 255), rgb(48, 241, 255));
   height: 130%;
   animation: rotBGImg 3s linear infinite;
   transition: all 0.3s linear;
@@ -544,6 +548,9 @@ header {
   .contents {
     flex-wrap: wrap;
   }
+  .service .contents .card {
+    padding: 15px;
+  }
 }
 
 /* end service sec */
@@ -552,11 +559,11 @@ header {
 .project {
   padding: 40px 0;
   background: rgba(0, 0, 0, 0.2);
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; */
+  text-align: center;
 }
 .project .head {
   display: flex;
