@@ -40,7 +40,7 @@ title {
   font-family: aquire;
 }
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: #1b1729;
@@ -52,10 +52,6 @@ title {
 html {
   scroll-behavior: smooth;
 }
-h1 h3 p {
-  text-shadow: red -2px 0;
-  text-shadow: green 2px 0;
-}
 /* nav sec */
 header {
   background-color: rgba(0, 0, 0, 0.3);
@@ -63,14 +59,13 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10000;
   transition: all 0.5s ease;
 }
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 60px; */
   padding: 5px 10px;
 }
 .nav-menu {
@@ -79,7 +74,7 @@ header {
   flex-direction: row;
   /*justify-content: space-between;
     align-items: center; */
-  gap: 35px;
+  gap: 40px;
   padding: 14px 0;
   margin: 0;
 }
@@ -91,7 +86,7 @@ header {
 .logo .nav-branding {
   font-family: aquire;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   /* padding: 4px; */
   font-weight: bold;
   background: linear-gradient(to right, rgb(78, 78, 244), rgb(72, 231, 245));
@@ -104,7 +99,7 @@ header {
   font-family: aquire;
   padding: 20px 10px;
   transition: 0.2s ease;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #ffffff;
   position: relative;
@@ -152,7 +147,7 @@ header {
   display: block;
   width: 30px;
   height: 3px;
-  margin: 5px auto;
+  margin: 5px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-color: #3cd3e7;
@@ -680,6 +675,9 @@ header {
 @media (max-width: 990px) {
   .project .head h1 {
     font-size: 35px;
+  }
+  .project .content {
+    margin: 30px;
   }
 }
 /* end project sec */
