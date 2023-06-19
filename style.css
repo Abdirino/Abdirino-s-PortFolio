@@ -618,14 +618,14 @@ header {
   box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2);
 }
 .project .content .detail h2 {
-  font-size: 28px;
-  margin: 10px;
-  padding: 6px;
+  font-size: 24px;
+  margin: 8px;
+  padding: 7px;
   /* width: fit-content; */
   font-family: aquire;
   border-bottom: 3px solid rgb(15, 201, 139);
   color: aquamarine;
-  background: linear-gradient(to right, rgb(13, 13, 228), rgb(0, 234, 255));
+  background: linear-gradient(to right, rgb(3, 3, 248), rgb(3, 128, 139));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -677,7 +677,7 @@ header {
     font-size: 35px;
   }
   .project .content {
-    margin: 30px;
+    margin: 30px 20px;
   }
 }
 /* end project sec */
