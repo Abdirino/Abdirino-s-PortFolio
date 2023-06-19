@@ -625,7 +625,7 @@ header {
   font-family: aquire;
   border-bottom: 3px solid rgb(15, 201, 139);
   color: aquamarine;
-  background: linear-gradient(to right, rgb(3, 3, 248), rgb(3, 128, 139));
+  background: linear-gradient(to right, rgb(3, 3, 248), rgb(4, 183, 199));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
