@@ -227,12 +227,12 @@ header {
 .home .greet h1 {
   font-family: aquire;
   padding: 5px 18px;
-  background: linear-gradient(to right, rgb(2, 217, 255), rgb(0, 99, 247));
+  background: linear-gradient(to right, rgb(39, 105, 116), rgb(68, 139, 244));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 20px;
-  font-size: 70px;
+  font-size: 65px;
   font-weight: bold;
 }
 .home .greet h3 {
@@ -412,7 +412,7 @@ header {
   margin: 0 auto;
   padding: 50px 0;
   width: 100%;
-  background: #134044;
+  background: #0e3438;
 }
 .service h1 {
   width: fit-content;
@@ -593,7 +593,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 35px 50px;
+  margin: 3rem 50px;
 }
 .project .content:nth-child(even) {
   flex-direction: row-reverse;
@@ -618,16 +618,16 @@ header {
 .project .content .detail {
   flex: 1 1 400px;
   text-align: start;
-  background: #15b1976f;
-  box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2);
+  padding: 0 18px;
+  /* background: #01433f; */
+  /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
   font-size: 24px;
   margin: 8px;
   padding: 7px;
-  /* width: fit-content; */
   font-family: aquire;
-  border-bottom: 3px solid rgb(15, 201, 139);
+  /* border-bottom: 3px solid rgb(15, 201, 139); */
   color: aquamarine;
   background: linear-gradient(to right, rgb(3, 81, 248), rgb(7, 187, 203));
   -webkit-background-clip: text;
@@ -658,7 +658,7 @@ header {
   padding: 6px;
   /* width: fit-content; */
   font-family: aquire;
-  border-bottom: 3px solid rgb(34, 207, 178);
+  /* border-bottom: 3px solid rgb(34, 207, 178); */
   background: linear-gradient(to right, rgb(0, 62, 248), rgb(7, 198, 215));
   -webkit-background-clip: text;
   background-clip: text;
@@ -714,15 +714,19 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.c-info{
+  display: flex;
+  align-items: center;
+}
 .contact-left p {
   font-size: 20px;
   color: white;
-  margin-top: 30px;
+  margin: 15px 0;
 }
-.contact-left p i {
+.contact-left .c-info i {
   color: aqua;
-  margin-right: 15px;
-  font-size: 25px;
+  margin-right: 10px;
+  font-size: 30px;
 }
 .social-icons {
   margin-top: 30px;
@@ -751,22 +755,23 @@ header {
 }
 form input,
 form textarea {
-  width: 92%;
+  width: 93%;
   border: 0;
   outline: none;
-  background: #444;
+  background: rgba(1, 1, 1, 0.4);
   padding: 15px;
-  margin: 15px 0 15px 10px;
+  margin: 10px 0 10px 10px;
   color: white;
   font-size: 18px;
   border-radius: 4px;
 }
 form button {
+  width: 93%;
   border: 0;
   outline: none;
   border: 2px solid rgb(1, 223, 252);
-  padding: 12px 30px;
-  margin: 15px 0 15px 10px;
+  padding: 15px 30px;
+  margin: 10px;
   background: transparent;
   color: aqua;
   font-size: 20px;
@@ -776,6 +781,11 @@ form button {
 }
 form button:hover {
   background: aqua;
+  color: black;
+  box-shadow: 0 0 60px aqua;
+}
+form button:active {
+  background: rgb(11, 109, 109);
   color: black;
   box-shadow: 0 0 60px aqua;
 }
