@@ -305,7 +305,7 @@ header {
 }
 @media (max-width: 480px) {
   .home .greet h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
   .home .greet h1 {
     font-size: 39px;
@@ -316,11 +316,11 @@ header {
 
 /* About sec */
 .about {
-  background: #151222;
+  background: rgb(21, 20, 52);
   /* height: 100vh; */
   width: 100%;
   display: flex;
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 .about .about-me {
   flex: 1 1 450px;
@@ -350,7 +350,7 @@ header {
   font-weight: 400;
   padding: 5px;
   margin: 10px 24px;
-  color: rgb(40, 225, 225);
+  color: rgb(255, 255, 255);
 }
 .about .about-me h2 {
   width: fit-content;
@@ -412,7 +412,7 @@ header {
   margin: 0 auto;
   padding: 50px 0;
   width: 100%;
-  background: #0e3438;
+  background: #222;
 }
 .service h1 {
   width: fit-content;
@@ -445,8 +445,7 @@ header {
   padding: 15px 20px;
   margin: 20px;
   overflow: hidden;
-  /* z-index: 1; */
-  background: #181524;
+  background: #191724;
   box-shadow: 0 0 8px rgb(0, 0, 0);
   border-radius: 10px;
 }
@@ -481,10 +480,10 @@ header {
   transition-delay: 400ms;
 }
 .service .card .up-content h2 {
-  font-size: 23px;
-  padding: 25px 0 15px 0;
+  font-size: 26px;
+  padding: 20px 0 15px 0;
   font-family: aquire;
-  background: linear-gradient(to right, rgb(16, 16, 223), rgb(6, 225, 245));
+  background: linear-gradient(to right, rgb(1, 68, 255), rgb(2, 232, 253));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -495,7 +494,7 @@ header {
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
   font-size: 18px;
-  color: #3cd3e7;
+  color: #ffffff;
   position: relative;
   z-index: 2;
 }
@@ -528,7 +527,7 @@ header {
 .p-lang .class p {
   display: inline;
   font-family: aquire;
-  color: aqua;
+  color: rgb(255, 255, 255);
   font-size: 12px;
 }
 .p-lang i {
@@ -618,7 +617,7 @@ header {
 .project .content .detail {
   flex: 1 1 400px;
   text-align: start;
-  padding: 0 18px;
+  padding: 7px 18px;
   /* background: #01433f; */
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
@@ -714,6 +713,14 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.contact-left h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 15px 0;
+  width: fit-content;
+  font-family: aquire;
+  color: rgb(5, 252, 252);
+}
 .c-info{
   display: flex;
   align-items: center;
@@ -800,11 +807,12 @@ form button:active {
 /* copy right */
 .copy {
   width: 100%;
-  padding: 10px 0;
+  padding: 7px;
   background: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .copy p {
   font-size: 18px;
