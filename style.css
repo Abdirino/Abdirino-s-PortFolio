@@ -33,7 +33,7 @@
   cursor: url(images/3d-pointer-28.png), default;
 }
 * h1 {
-  text-shadow: -2px 2px 0 #10d1d1, -4px 4px 0 #0f98a7, -6px 6px 0 #0f82a9,
+  text-shadow: -2px 2px 0 #01e1ff, -4px 4px 0 #0f98a7, -6px 6px 0 #0f82a9,
     -8px 8px 0 #0b484b;
 }
 title {
@@ -212,16 +212,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: rgb(0, 0, 0);
   /* -webkit-animation: color-change-3x 4s linear infinite alternate both;
   animation: color-change-3x 4s linear infinite alternate both; */
 }
 .home .greet {
   font-weight: bold;
-  background: linear-gradient(to right, rgb(2, 217, 255), rgb(0, 173, 247));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -230,15 +227,22 @@ header {
 .home .greet h1 {
   font-family: aquire;
   padding: 5px 18px;
-  /* line-height: 44px; */
+  background: linear-gradient(to right, rgb(2, 217, 255), rgb(0, 99, 247));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 20px;
-  font-size: 72px;
+  font-size: 70px;
   font-weight: bold;
 }
 .home .greet h3 {
   font-family: aquire;
   padding: 5px 18px;
-  /* line-height: 44px; */
+  /* background: linear-gradient(to right, rgb(1, 179, 210), rgb(0, 99, 247));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: white;
   padding-bottom: 12px;
   font-size: 30px;
   font-weight: bold;
@@ -613,8 +617,8 @@ header {
 }
 .project .content .detail {
   flex: 1 1 400px;
-  text-align: center;
-  background: #1ddfbf6f;
+  text-align: start;
+  background: #15b1976f;
   box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2);
 }
 .project .content .detail h2 {
@@ -625,7 +629,7 @@ header {
   font-family: aquire;
   border-bottom: 3px solid rgb(15, 201, 139);
   color: aquamarine;
-  background: linear-gradient(to right, rgb(3, 3, 248), rgb(4, 183, 199));
+  background: linear-gradient(to right, rgb(3, 81, 248), rgb(7, 187, 203));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -639,14 +643,14 @@ header {
 }
 
 .project .content .detail .links i {
-  padding: 10px;
+  padding: 7px;
   margin: 5px auto;
   font-size: 35px;
   color: rgb(5, 97, 97);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .project .content .detail i:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .project .content .detail .tech h3 {
   font-size: 19px;
@@ -655,7 +659,7 @@ header {
   /* width: fit-content; */
   font-family: aquire;
   border-bottom: 3px solid rgb(34, 207, 178);
-  background: linear-gradient(to right, rgb(12, 12, 249), rgb(1, 234, 255));
+  background: linear-gradient(to right, rgb(0, 62, 248), rgb(7, 198, 215));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -663,7 +667,7 @@ header {
 .project .content .detail .tech .techi {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin: 4px;
 }
