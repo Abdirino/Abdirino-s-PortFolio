@@ -62,7 +62,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxcDxnOXn2Xmgx7C24EnO
                     msg.innerHTML = "Message sent Successfully."
                     setTimeout(function () {
                         msg.innerHTML = ""
-                    }, 2000);
+                    }, 1400);
                     form.reset();
                 })
                 .catch(error => console.error('Error!', error.message))
