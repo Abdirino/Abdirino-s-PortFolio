@@ -604,7 +604,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 3rem 50px;
+  margin: 3.4rem 50px;
 }
 .project .content:nth-child(even) {
   flex-direction: row-reverse;
