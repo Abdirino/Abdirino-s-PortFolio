@@ -33,9 +33,21 @@
   cursor: url(images/3d-pointer-28.png), default;
 }
 * h1 {
-  text-shadow: -2px 2px 0 #01e1ff, -4px 4px 0 #0f98a7, -6px 6px 0 #0f82a9,
-    -8px 8px 0 #0b484b;
+  text-shadow: 0 2px 0 #01e1ff,
+  0 3px 0 #026673,
+  0 4px 0 #026370,
+  0 5px 0 #01606c,
+  0 6px 0 #01606d;
 }
+/* * h1 {
+  text-shadow: 0 -1px 0 #01e1ff,
+  0 2px 0 #01e1ff,
+  0 4px 0 #01e1ff,
+   -2px -2px 15px #0f98a7,
+   2px -2px 15px #0f98a7,
+   -2px 2px 15px #0f98a7,
+   2px 2px 15px #0f98a7;
+} */
 title {
   font-family: aquire;
 }
@@ -308,7 +320,7 @@ header {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 39px;
+    font-size: 35px;
   }
 }
 
@@ -369,10 +381,10 @@ header {
   align-items: center;
 }
 .about-me a {
-  padding: 12px 25px;
+  padding: 12px 24px;
   border-radius: 4px;
   font-family: aquire;
-  font-size: 22px;
+  font-size: 19px;
   border: 2px solid aqua;
   margin: 22px 24px;
   color: rgb(0, 221, 255);
@@ -382,13 +394,13 @@ header {
 .about-me a:hover {
   background: aqua;
   color: rgb(0, 0, 0);
-  box-shadow: 0 0 60px aqua;
+  box-shadow: 0 0 50px aqua;
 }
 .about .img {
   flex: 1 1 450px;
 }
 .about .img img {
-  border-radius: 15px;
+  border-radius: 7px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -442,12 +454,12 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: start;
-  padding: 15px 20px;
+  padding: 12px 18px;
   margin: 20px;
   overflow: hidden;
   background: #191724;
   box-shadow: 0 0 8px rgb(0, 0, 0);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .service .contents .card::before {
   content: "";
@@ -547,7 +559,7 @@ header {
     flex-wrap: wrap;
   }
   .service .contents .card {
-    padding: 15px;
+    padding: 12px;
   }
 }
 
@@ -623,8 +635,8 @@ header {
 }
 .project .content .detail h2 {
   font-size: 24px;
-  margin: 8px;
-  padding: 7px;
+  margin: 5px;
+  padding: 5px;
   font-family: aquire;
   /* border-bottom: 3px solid rgb(15, 201, 139); */
   color: aquamarine;
@@ -721,19 +733,19 @@ header {
   font-family: aquire;
   color: rgb(5, 252, 252);
 }
-.c-info{
+.c-info {
   display: flex;
   align-items: center;
 }
 .contact-left p {
-  font-size: 20px;
+  font-size: 17px;
   color: white;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 .contact-left .c-info i {
   color: aqua;
-  margin-right: 10px;
-  font-size: 30px;
+  margin-right: 8px;
+  font-size: 20px;
 }
 .social-icons {
   margin-top: 30px;
@@ -822,6 +834,11 @@ form button:active {
 @media (max-width: 990px) {
   .copy p {
     font-size: 12px;
+  }
+}
+@media (max-width: 490px) {
+  .contact-left h1{
+    font-size: 21px;
   }
 }
 /* end copy right */
