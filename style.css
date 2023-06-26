@@ -559,7 +559,7 @@ header {
     flex-wrap: wrap;
   }
   .service .contents .card {
-    padding: 12px;
+    padding: 9px;
   }
 }
 
@@ -614,7 +614,7 @@ header {
   flex: 1 1 400px;
   /* height: 350px; */
   width: 350px;
-  box-shadow: 0px 8px 32px #000000c2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 .project .content .img img {
