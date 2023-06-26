@@ -171,7 +171,7 @@ header {
   }
   .checkbtn {
     display: block;
-    margin: 10px 0;
+    margin: 8px 0;
     align-items: flex-end;
   }
   .checkbtn.active .bar:nth-child(2) {
@@ -188,11 +188,11 @@ header {
   }
 
   .nav-branding {
-    font-size: 2.1rem;
-    margin: 15px;
+    font-size: 1.8rem;
+    margin: 12px;
   }
   .navbar {
-    min-height: 40px;
+    min-height: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -209,7 +209,7 @@ header {
     transition: 0.3s;
   }
   .nav-item {
-    margin: 16px 0;
+    margin: 14px 0;
   }
   .nav-menu:checked .nav-link:active {
     left: -100%;
@@ -629,7 +629,7 @@ header {
 .project .content .detail {
   flex: 1 1 400px;
   text-align: start;
-  padding: 7px 18px;
+  padding: 10px 20px;
   /* background: #01433f; */
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
@@ -693,6 +693,9 @@ header {
   }
   .project .content {
     margin: 30px 20px;
+  }
+  .project .content .detail {
+    padding: 9px;
   }
 }
 /* end project sec */
@@ -838,7 +841,7 @@ form button:active {
 }
 @media (max-width: 490px) {
   .contact-left h1{
-    font-size: 21px;
+    font-size: 27px;
   }
 }
 /* end copy right */
