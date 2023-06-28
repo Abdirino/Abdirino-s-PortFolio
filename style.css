@@ -192,7 +192,8 @@ header {
     margin: 12px;
   }
   .navbar {
-    min-height: 35px;
+    min-height: 28px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -559,7 +560,7 @@ header {
     flex-wrap: wrap;
   }
   .service .contents .card {
-    padding: 9px;
+    padding: 7px;
   }
 }
 
@@ -629,7 +630,7 @@ header {
 .project .content .detail {
   flex: 1 1 400px;
   text-align: start;
-  padding: 10px 20px;
+  padding: 8px 21px;
   /* background: #01433f; */
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
@@ -695,7 +696,7 @@ header {
     margin: 30px 20px;
   }
   .project .content .detail {
-    padding: 9px;
+    padding: 7px;
   }
 }
 /* end project sec */
@@ -711,7 +712,7 @@ header {
   flex-wrap: wrap;
 }
 .contact-left {
-  padding-left: 30px;
+  padding-left: 27px;
   flex: 1 1 300px;
 }
 .contact-right {
