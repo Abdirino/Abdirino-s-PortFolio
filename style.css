@@ -201,7 +201,7 @@ header {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 60px;
+    top: 54px;
     gap: 0;
     flex-direction: column;
     background-color: #181524;
@@ -412,6 +412,9 @@ header {
   .about {
     flex-wrap: wrap;
   }
+  .about .about-me p{
+    font-size: 18px;
+  }
 }
 /* End About sec */
 
@@ -560,7 +563,7 @@ header {
     flex-wrap: wrap;
   }
   .service .contents .card {
-    padding: 7px;
+    padding: 10px;
   }
 }
 
@@ -605,7 +608,8 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 3.4rem 50px;
+  margin: 3.5rem 50px;
+  border-bottom: 1px solid grey;
 }
 .project .content:nth-child(even) {
   flex-direction: row-reverse;
@@ -696,7 +700,7 @@ header {
     margin: 30px 20px;
   }
   .project .content .detail {
-    padding: 7px;
+    padding: 10px 4px;
   }
 }
 /* end project sec */
