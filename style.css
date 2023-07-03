@@ -193,7 +193,7 @@ header {
   }
   .navbar {
     min-height: 28px;
-    padding: 5px;
+    padding: 12px 6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -313,7 +313,7 @@ header {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 49px;
+    font-size: 50px;
   }
 }
 @media (max-width: 480px) {
@@ -321,7 +321,7 @@ header {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 35px;
+    font-size: 38px;
   }
 }
 
@@ -358,7 +358,7 @@ header {
   font-family: "Poppins", sans-serif;
   text-transform: none;
   gap: 20px;
-  font-size: 21px;
+  font-size: 18px;
   padding: 5px;
   margin: 10px 24px;
   color: rgb(255, 255, 255);
@@ -410,9 +410,6 @@ header {
   .about {
     flex-wrap: wrap;
   }
-  .about .about-me p {
-    font-size: 17px;
-  }
 }
 /* End About sec */
 
@@ -459,7 +456,7 @@ header {
   padding: 12px 18px;
   margin: 20px;
   overflow: hidden;
-  background: #191724;
+  background: #201d35;
   box-shadow: 0 0 8px rgb(0, 0, 0);
   border-radius: 8px;
 }
@@ -561,7 +558,7 @@ header {
     flex-wrap: wrap;
   }
   .service .contents .card {
-    padding: 10px;
+    padding: 14px;
   }
 }
 
@@ -611,7 +608,6 @@ header {
 }
 .project .content:nth-child(even) {
   flex-direction: row-reverse;
-  border-radius: 0 5px 5px 0;
 }
 .project .content .img {
   flex: 1 1 400px;
@@ -627,7 +623,7 @@ header {
   transition: all 0.5s ease;
 }
 .project .content:hover .img img {
-  transform: scale(1.04);
+  transform: scale(1.1);
 }
 .project .content .detail {
   flex: 1 1 400px;
@@ -714,14 +710,14 @@ header {
   flex-wrap: wrap;
 }
 .contact-left {
-  padding-left: 27px;
+  padding-left: 21px;
   flex: 1 1 300px;
 }
 .contact-right {
   flex: 1 1 500px;
 }
 .contact-left h1 {
-  font-size: 35px;
+  font-size: 39px;
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
@@ -834,6 +830,7 @@ form button:active {
 }
 .copy p {
   font-size: 18px;
+  padding: 0 5px;
   font-family: aquire;
   color: #3ca8e7;
 }
