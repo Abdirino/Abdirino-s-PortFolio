@@ -245,7 +245,7 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 25px;
-  font-size: 82px;
+  font-size: 76px;
   font-weight: bold;
 }
 .home .greet h3 {
@@ -345,10 +345,10 @@ header {
 }
 .about .about-me h1 {
   font-family: aquire;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: bold;
   margin: 24px;
-  padding: 5px;
+  padding: 8px 5px;
   background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
   -webkit-background-clip: text;
   background-clip: text;
@@ -411,7 +411,7 @@ header {
     flex-wrap: wrap;
   }
   .about .about-me p {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 /* End About sec */
@@ -652,7 +652,7 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 5px;
   padding: 5px;
   font-family: aquire;
@@ -664,7 +664,7 @@ header {
   -webkit-text-fill-color: transparent;
 }
 .project .content .detail p {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Poppins", sans-serif;
   margin: 5px;
   padding: 5px;
@@ -682,7 +682,7 @@ header {
   transform: scale(1.1);
 }
 .project .content .detail .tech h3 {
-  font-size: 19px;
+  font-size: 17px;
   margin: 6px;
   padding: 6px;
   /* width: fit-content; */
