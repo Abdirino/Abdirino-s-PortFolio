@@ -239,13 +239,13 @@ header {
 }
 .home .greet h1 {
   font-family: aquire;
-  padding: 5px 18px;
+  padding: 8px 18px;
   background: linear-gradient(to right, rgb(39, 105, 116), rgb(68, 139, 244));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-bottom: 20px;
-  font-size: 65px;
+  padding-bottom: 25px;
+  font-size: 82px;
   font-weight: bold;
 }
 .home .greet h3 {
@@ -358,7 +358,7 @@ header {
   font-family: "Poppins", sans-serif;
   text-transform: none;
   gap: 20px;
-  font-size: 18px;
+  font-size: 25px;
   padding: 5px;
   margin: 10px 24px;
   color: rgb(255, 255, 255);
@@ -409,6 +409,9 @@ header {
 @media (max-width: 900px) {
   .about {
     flex-wrap: wrap;
+  }
+  .about .about-me p {
+    font-size: 18px;
   }
 }
 /* End About sec */
@@ -491,7 +494,7 @@ header {
   transition-delay: 400ms;
 }
 .service .card .up-content h2 {
-  font-size: 26px;
+  font-size: 28px;
   padding: 20px 0 15px 0;
   font-family: aquire;
   background: linear-gradient(to right, rgb(1, 68, 255), rgb(2, 232, 253));
@@ -566,9 +569,14 @@ header {
 
 /* project sec */
 .project {
+  width: 100%;
   padding: 40px 0;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .project .head {
   display: flex;
@@ -600,11 +608,22 @@ header {
   background: aquamarine;
 }
 .project .content {
+  /* max-width: 60vw; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 3.5rem 50px;
   border-bottom: 1px solid grey;
+}
+@media (min-width: 1550px) {
+  .project .content {
+    max-width: 64vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3.5rem 50px;
+    border-bottom: 1px solid grey;
+  }
 }
 .project .content:nth-child(even) {
   flex-direction: row-reverse;
