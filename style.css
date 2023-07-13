@@ -245,8 +245,13 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 25px;
-  font-size: 76px;
+  font-size: 66px;
   font-weight: bold;
+}
+@media(min-width: 1460px){
+  .home .greet h1{
+    font-size: 88px;
+  }
 }
 .home .greet h3 {
   font-family: aquire;
@@ -321,7 +326,7 @@ header {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 
@@ -345,7 +350,7 @@ header {
 }
 .about .about-me h1 {
   font-family: aquire;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   margin: 24px;
   padding: 8px 5px;
@@ -358,7 +363,7 @@ header {
   font-family: "Poppins", sans-serif;
   text-transform: none;
   gap: 20px;
-  font-size: 25px;
+  font-size: 22px;
   padding: 5px;
   margin: 10px 24px;
   color: rgb(255, 255, 255);
@@ -412,6 +417,9 @@ header {
   }
   .about .about-me p {
     font-size: 17px;
+  }
+  .about .about-me p {
+    font-size: 18px;
   }
 }
 /* End About sec */
@@ -475,7 +483,7 @@ header {
 .card::after {
   content: "";
   position: absolute;
-  background: #07182e;
+  background: #201d35;
   inset: 5px;
   border-radius: 15px;
 }
@@ -615,7 +623,7 @@ header {
   margin: 3.5rem 50px;
   border-bottom: 1px solid grey;
 }
-@media (min-width: 1550px) {
+@media (min-width: 1710px) {
   .project .content {
     max-width: 64vw;
     display: flex;
@@ -652,7 +660,7 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 32px;
+  font-size: 37px;
   margin: 5px;
   padding: 5px;
   font-family: aquire;
@@ -664,7 +672,7 @@ header {
   -webkit-text-fill-color: transparent;
 }
 .project .content .detail p {
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Poppins", sans-serif;
   margin: 5px;
   padding: 5px;
@@ -714,6 +722,9 @@ header {
   }
   .project .content .detail {
     padding: 10px 4px;
+  }
+  .project .content .detail p {
+    font-size: 17px;
   }
 }
 /* end project sec */
