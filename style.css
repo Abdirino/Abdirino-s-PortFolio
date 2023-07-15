@@ -610,15 +610,6 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.project .head a {
-  padding: 10px 20px;
-  margin: 10px;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(21, 74, 78));
-  font-family: aquire;
-  font-size: 20px;
-  border-radius: 10px;
-  color: aqua;
-}
 .project .head a:hover {
   color: black;
   background: aquamarine;
@@ -634,11 +625,6 @@ header {
 @media (min-width: 1710px) {
   .project .content {
     max-width: 64vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3.5rem 50px;
-    border-bottom: 1px solid grey;
   }
 }
 .project .content:nth-child(even) {
