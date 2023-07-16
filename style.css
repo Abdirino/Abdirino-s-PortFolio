@@ -215,7 +215,7 @@ header {
   .nav-menu:checked .nav-link:active {
     left: -100%;
   }
-  .nav-link:active ~ .nav-menu{
+  .nav-link:active ~ .nav-menu {
     left: 0;
   }
 }
@@ -598,6 +598,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .project .head h1 {
   font-size: 44px;
@@ -644,7 +645,7 @@ header {
   transition: all 0.5s ease;
 }
 .project .content:hover .img img {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .project .content .detail {
   flex: 1 1 400px;
@@ -654,7 +655,7 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 37px;
+  font-size: 30px;
   margin: 5px;
   padding: 5px;
   font-family: aquire;
@@ -727,11 +728,19 @@ header {
 .contact {
   background: #222;
   padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media(min-width: 1700px){
+  .contact .row{
+    max-width: 85vw;
+  }
 }
 .contact-left {
   padding-left: 21px;
