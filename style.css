@@ -33,8 +33,33 @@
   cursor: url(images/3d-pointer-28.png), default;
 }
 * h1 {
-  text-shadow: 0 2px 0 #01e1ff, 0 3px 0 #026673, 0 4px 0 #026370,
-    0 5px 0 #01606c, 0 6px 0 #01606d;
+  /* text-shadow: 0 2px 0 #01e1ff, 0 3px 0 #026673, 0 4px 0 #026370,
+    0 5px 0 #01606c, 0 6px 0 #01606d; */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #01e1ff;
+  position: relative;
+}
+* h1::before,
+*h1::after{
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  transition: 0.4s ease-in-out;
+}
+* h1:hover::before{
+  color: red;
+  transform: translate(12px, -12px);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+* h1:hover::after{
+  color: red;
+  transform: translate(12px, -12px);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 /* * h1 {
   text-shadow: 0 -1px 0 #01e1ff,
@@ -49,14 +74,14 @@ title {
   font-family: aquire;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 14px;
 }
 ::-webkit-scrollbar-track {
   background: #1b1729;
 }
 ::-webkit-scrollbar-thumb {
   background: #3ca8e7;
-  border-radius: 100vw;
+  border-radius: 3px;
 }
 html {
   scroll-behavior: smooth;
@@ -138,6 +163,9 @@ header {
 }
 .nav-link:hover::before {
   transform: scaleX(1);
+}
+.nav-item:hover .nav-link{
+  color: #01e1ff;
 }
 .checkbtn {
   color: aqua;
@@ -243,18 +271,10 @@ header {
 .home .greet h1 {
   font-family: aquire;
   padding: 8px 18px;
-  background: linear-gradient(to right, rgb(39, 105, 116), rgb(68, 139, 244));
-  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding-bottom: 25px;
-  font-size: 66px;
+  font-size: 60px;
   font-weight: bold;
-}
-@media (min-width: 1500px) {
-  .home .greet h1 {
-    font-size: 90px;
-  }
 }
 .home .greet h3 {
   font-family: aquire;
@@ -264,14 +284,18 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent; */
   color: white;
+  letter-spacing: 2px;
   padding-bottom: 12px;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
 }
-.home .greet h1:nth-child(1),
-.home .greet h1:nth-child(3) {
-  font-size: 30px;
-  padding: 18px;
+@media (min-width: 1600px) {
+  .home .greet h1 {
+    font-size: 90px;
+  }
+  .home .greet h3 {
+    font-size: 35px;
+  }
 }
 .home .greet p {
   font-size: 20px;
@@ -356,11 +380,7 @@ header {
   font-size: 40px;
   font-weight: bold;
   margin: 24px;
-  padding: 8px 5px;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding: 5px;
 }
 .about .about-me p {
   font-family: "Poppins", sans-serif;
@@ -375,17 +395,6 @@ header {
   .about .about-me p {
     font-size: 26px;
   }
-}
-.about .about-me h2 {
-  width: fit-content;
-  font-family: aquire;
-  font-size: 32px;
-  font-weight: bold;
-  margin: 30px 10px;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .about-me .buttons {
   display: flex;
@@ -424,7 +433,7 @@ header {
     flex-wrap: wrap;
   }
 }
-@media(max-width: 480px){
+@media (max-width: 480px) {
   .about .about-me p {
     font-size: 18px;
   }
@@ -447,10 +456,6 @@ header {
   width: fit-content;
   font-family: aquire;
   font-size: 45px;
-  background: linear-gradient(to right, rgb(81, 81, 227), rgb(24, 220, 238));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding: 13px;
   padding-bottom: 30px;
 }
@@ -471,7 +476,7 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: start;
-  padding: 12px 18px;
+  padding: 10px 17px;
   margin: 20px;
   overflow: hidden;
   background: #201d35;
@@ -509,13 +514,10 @@ header {
   transition-delay: 400ms;
 }
 .service .card .up-content h2 {
-  font-size: 28px;
+  font-size: 23px;
   padding: 20px 0 15px 0;
   font-family: aquire;
-  background: linear-gradient(to right, rgb(1, 68, 255), rgb(2, 232, 253));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #01e1ff;
   position: relative;
   z-index: 2;
 }
@@ -555,13 +557,13 @@ header {
 }
 .p-lang .class p {
   display: inline;
-  font-family: aquire;
+  font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 12px;
 }
 .p-lang i {
-  font-size: 45px;
-  padding: 10px 22px;
+  font-size: 42px;
+  padding: 10px 21px;
   transition: all 0.4s ease;
 }
 .p-lang i:hover {
@@ -600,15 +602,12 @@ header {
   flex-direction: column;
 }
 .project .head h1 {
-  font-size: 44px;
+  font-size: 42px;
+  -webkit-text-stroke-color: #024d57 !important;
   margin: 6px;
   padding: 8px;
   width: fit-content;
   font-family: aquire;
-  background: linear-gradient(to right, rgb(40, 40, 219), rgb(29, 185, 199));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .project .head a:hover {
   color: black;
@@ -619,7 +618,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 3.5rem 50px;
+  margin: 3.5rem 20px;
   border-bottom: 1px solid grey;
 }
 @media (min-width: 1710px) {
@@ -718,7 +717,7 @@ header {
     padding: 10px 4px;
   }
 }
-@media(max-width: 480px){
+@media (max-width: 480px) {
   .project .content .detail p {
     font-size: 18px;
   }
@@ -738,8 +737,8 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media(min-width: 1700px){
-  .contact .row{
+@media (min-width: 1700px) {
+  .contact .row {
     max-width: 85vw;
   }
 }
@@ -751,15 +750,11 @@ header {
   flex: 1 1 500px;
 }
 .contact-left h1 {
-  font-size: 39px;
+  font-size: 40px;
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
   font-family: aquire;
-  background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .contact-left h2 {
   font-size: 30px;
