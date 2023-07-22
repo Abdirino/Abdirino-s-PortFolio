@@ -515,7 +515,8 @@ header {
   transition-delay: 400ms;
 }
 .service .card .up-content h2 {
-  font-size: 23px;
+  font-size: 22px;
+  letter-spacing: 1px;
   padding: 20px 0 15px 0;
   font-family: aquire;
   color: #01e1ff;
@@ -654,7 +655,8 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 24px;
+  font-size: 23px;
+  letter-spacing: 1px;
   margin: 5px;
   padding: 10px 5px;
   font-family: aquire;
@@ -681,13 +683,13 @@ header {
 .project .content .detail .links i {
   padding: 7px;
   margin: 5px auto;
-  font-size: 42px;
+  font-size: 40px;
   color: rgb(5, 97, 97);
   transition: all 0.3s ease;
 }
 .detail .live-view a h3{
   letter-spacing: 1px;
-  padding: 9px 42px;
+  padding: 8px 48px;
   font-size: 18px !important;
   font-weight: 450;
   font-family: "Poppins", sans-serif;
@@ -707,6 +709,7 @@ header {
 }
 .project .content .detail .tech h3 {
   font-size: 17px;
+  letter-spacing: 1px;
   margin: 6px;
   padding: 6px;
   /* width: fit-content; */
