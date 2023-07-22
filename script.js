@@ -14,6 +14,7 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 // end on-scroll animation
 
+
 // nav reveal on-scroll
 let prevScroll = window.pageYOffset;
 window.onscroll = function () {
@@ -28,15 +29,6 @@ window.onscroll = function () {
 
 //end nav reveal on-scroll
 
-// popup menu
-let popup = document.getElementById("popup");
-function openPopup() {
-  popup.classList.add("open-popup");
-}
-function closePopup() {
-  popup.classList.remove("open-popup");
-}
-// end popup menu
 
 // scroll to top button
 const toTop = () => {
@@ -44,17 +36,6 @@ const toTop = () => {
 };
 // end scroll to top button
 
-// loader
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector(".body").style.visibility = "hidden";
-    document.querySelector("#spinner").style.visibility = "visible";
-  } else {
-    document.querySelector("#spinner").style.display = "none";
-    document.querySelector(".body").style.visibility = "visible";
-  }
-};
-// end loader
 
 // contact sec
 const scriptURL =

@@ -39,6 +39,7 @@
         emailjs.init("Pr-4H4xBr6MljTcGR");
       })();
     </script>
+    <link rel="manifest" href="manifest.json">
     <link rel="website icon" type="png" href="images/ux.png" />
   </head>
   <!-- oncontextmenu="return false" -->
@@ -82,23 +83,6 @@
       </nav>
     </header>
     <!-- end nav sec -->
-
-    <!-- start loader sec -->
-    <div class="loader" id="spinner">
-      <div class="cell d-0"></div>
-      <div class="cell d-1"></div>
-      <div class="cell d-2"></div>
-
-      <div class="cell d-1"></div>
-      <div class="cell d-2"></div>
-
-      <div class="cell d-2"></div>
-      <div class="cell d-3"></div>
-
-      <div class="cell d-3"></div>
-      <div class="cell d-4"></div>
-    </div>
-    <!-- end loader sec -->
 
     <!-- home sec  -->
     <div
@@ -293,10 +277,10 @@
             with our cutting-edge selection of gear and gadgets, as well as
             stylish apparel. Discover what's next at Edge Mart.
           </p>
-          <div class="links">
+          <div class="links live-view">
             <a href="https://edge-mart-e-commerce.vercel.app/" target="_blank"
-              ><i class="bx bx-right-top-arrow-circle"></i
-            ></a>
+              ><h3>Live View</h3></a
+            >
             <a
               href="https://github.com/Abdirino/EdgeMart-E-Commerce"
               target="_blank"
@@ -326,12 +310,12 @@
             seeking adventure, relaxation, or cultural immersion, let Golden
             Sunset take you on an unforgettable journey around the world.
           </p>
-          <div class="links">
+          <div class="links live-view">
             <a
               href="https://golden-sunset-travel-agency.netlify.app"
               target="_blank"
-              ><i class="bx bx-right-top-arrow-circle"></i
-            ></a>
+              ><h3>Live View</h3></a
+            >
             <a
               href="https://github.com/Abdirino/sunset-travel-website"
               target="_blank"
@@ -363,12 +347,12 @@
             for a business meeting, or simply want to explore a new city in
             style, flexiDrive has got you covered.
           </p>
-          <div class="links">
+          <div class="links live-view">
             <a
               href="https://flexi-drive-car-rental.onrender.com/"
               target="_blank"
-              ><i class="bx bx-right-top-arrow-circle"></i
-            ></a>
+              ><h3>Live View</h3></a
+            >
             <a
               href="https://github.com/Abdirino/Flexi_Drive-Car-Rental-Site"
               target="_blank"
@@ -400,12 +384,12 @@
             not only delivers high-quality internet services but also
             prioritizes cost-effectiveness for its clientele.
           </p>
-          <div class="links">
+          <div class="links live-view">
             <a
               href="https://i-affordable-internet-provider.vercel.app/"
               target="_blank"
-              ><i class="bx bx-right-top-arrow-circle"></i
-            ></a>
+              ><h3>Live View</h3></a
+            >
             <a
               href="https://github.com/Abdirino/I-Affordable-Internet-Provider"
               target="_blank"
@@ -503,5 +487,10 @@
       AOS.init();
     </script>
     <!-- end scroll animation -->
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+      }
+    </script>
   </body>
 </html>
