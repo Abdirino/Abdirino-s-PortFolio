@@ -15,21 +15,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 // end on-scroll animation
 
 
-// nav reveal on-scroll
-let prevScroll = window.pageYOffset;
-window.onscroll = function () {
-  let currentScroll = window.pageYOffset;
-  if (prevScroll > currentScroll) {
-    document.getElementsByClassName("navbar").style.top = "0";
-  } else {
-    document.getElementsByClassName("navbar").style.top = "-60px";
-  }
-  prevScroll = currentScroll;
-};
-
-//end nav reveal on-scroll
-
-
 // scroll to top button
 const toTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -61,6 +46,8 @@ const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
 // end copyright
 
+
+// hamburger sec
 const barMenu = document.querySelector(".checkbtn");
 
 barMenu.addEventListener("click", mobileMenu);
@@ -68,3 +55,4 @@ barMenu.addEventListener("click", mobileMenu);
 function mobileMenu() {
   barMenu.classList.toggle("active");
 }
+// hamburger sec

@@ -42,6 +42,11 @@
   -webkit-text-stroke-color: #01e1ff;
   position: relative;
 }
+@media (max-width: 480px) {
+  * h1 {
+    -webkit-text-stroke-width: 1.08px;
+  }
+}
 * h1::before,
 *h1::after {
   content: attr(data-text);
@@ -227,7 +232,7 @@ header {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 54px;
+    top: 60px;
     gap: 0;
     flex-direction: column;
     background-color: #181524;
@@ -289,6 +294,27 @@ header {
   padding-bottom: 12px;
   font-size: 27px;
   font-weight: bold;
+}
+.home-button {
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.home-button button {
+  padding: 10px 25px;
+  border: none;
+  font-size: 18px;
+  background: rgba(4, 185, 192, 0.4);
+  color: white;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.home-button button:hover {
+  background: aqua;
+  color: black;
 }
 @media (min-width: 1600px) {
   .home .greet h1 {
@@ -355,6 +381,13 @@ header {
   }
   .home .greet h1 {
     font-size: 40px;
+  }
+  .home-button {
+    gap: 3px !important;
+  }
+  .home-button button {
+    font-size: 16px;
+    font-weight: 450;
   }
 }
 
@@ -674,7 +707,7 @@ header {
   padding: 5px;
   word-spacing: 3px;
 }
-.project .content .detail .links{
+.project .content .detail .links {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -687,7 +720,7 @@ header {
   color: rgb(5, 97, 97);
   transition: all 0.3s ease;
 }
-.detail .live-view a h3{
+.detail .live-view a h3 {
   letter-spacing: 1px;
   padding: 8px 48px;
   font-size: 18px !important;
@@ -700,7 +733,7 @@ header {
   border-radius: 4px;
   transition: 0.5s ease;
 }
-.live-view a h3:hover{
+.live-view a h3:hover {
   background: rgba(4, 185, 192, 0.4);
   color: rgb(0, 0, 0);
 }
@@ -708,7 +741,7 @@ header {
   transform: scale(1.1);
 }
 .project .content .detail .tech h3 {
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 1px;
   margin: 6px;
   padding: 6px;
@@ -733,7 +766,7 @@ header {
   transition: 0.4s ease;
 }
 @media (max-width: 1090px) {
-  .project .content{
+  .project .content {
     flex-wrap: wrap;
   }
   .project .head h1 {
@@ -749,6 +782,9 @@ header {
 @media (max-width: 480px) {
   .project .content .detail p {
     font-size: 15px;
+  }
+  .project .content .detail .tech h3 {
+    font-size: 14.8px;
   }
 }
 /* end project sec */
@@ -786,7 +822,7 @@ header {
   font-family: aquire;
 }
 .contact-left h2 {
-  font-size: 30px;
+  font-size: 34px;
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
@@ -899,7 +935,7 @@ form button:active {
 }
 @media (max-width: 490px) {
   .contact-left h1 {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 /* end copy right */

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="website icon" type="png" href="images/ux.png" />
     <title>Abdirahman's PortFolio - Front-End Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -39,8 +41,6 @@
         emailjs.init("Pr-4H4xBr6MljTcGR");
       })();
     </script>
-    <link rel="manifest" href="manifest.json">
-    <link rel="website icon" type="png" href="images/ux.png" />
   </head>
   <!-- oncontextmenu="return false" -->
 
@@ -94,6 +94,14 @@
         <h3>Hello there<span>👋</span>, i'm</h3>
         <h1 data-text="Abdi - rahman-Abdulaziz">Abdirahman Abdulaziz,</h1>
         <h3>A Front-End React Developer.</h3>
+        <div class="home-button">
+          <a href="#project">
+            <button>My Work</button>
+          </a>
+          <a href="#contact">
+            <button>Say Hello 🤙</button>
+          </a>
+        </div>
         <div class="home-socials">
           <a
             href="https://www.linkedin.com/in/abdirahman-abdulaziz/"
@@ -486,8 +494,8 @@
     </script>
     <!-- end scroll animation -->
     <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
       }
     </script>
   </body>
