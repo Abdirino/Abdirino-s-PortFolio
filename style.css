@@ -299,22 +299,22 @@ header {
   padding: 12px 18px;
   display: flex;
   align-items: center;
-  gap: 6px;
 }
 .home-button button {
   padding: 10px 25px;
   border: none;
-  font-size: 18px;
-  background: rgba(4, 185, 192, 0.4);
-  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  background: rgb(4, 188, 188);
+  color: black;
   border-radius: 4px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
 }
 .home-button button:hover {
-  background: aqua;
-  color: black;
+  background: rgba(4, 145, 150, 0.7);
+  color: white;
 }
 @media (min-width: 1600px) {
   .home .greet h1 {
@@ -386,7 +386,7 @@ header {
     gap: 3px !important;
   }
   .home-button button {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 450;
   }
 }
@@ -710,7 +710,7 @@ header {
 .project .content .detail .links {
   display: flex;
   align-items: center;
-  gap: 5px;
+  /* gap: 5px; */
   padding: 6px 0;
 }
 .project .content .detail .links i {
@@ -722,7 +722,7 @@ header {
 }
 .detail .live-view a h3 {
   letter-spacing: 1px;
-  padding: 8px 48px;
+  padding: 8px 40px;
   font-size: 18px !important;
   font-weight: 450;
   font-family: "Poppins", sans-serif;
@@ -734,7 +734,7 @@ header {
   transition: 0.5s ease;
 }
 .live-view a h3:hover {
-  background: rgba(4, 185, 192, 0.4);
+  background: rgba(3, 201, 208, 0.6);
   color: rgb(0, 0, 0);
 }
 .project .content .detail i:hover {
