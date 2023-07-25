@@ -15,6 +15,12 @@
   transform: translateX(-50%);
   transition: all 1.2s;
 }
+.hidden2 {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateX(50%);
+  transition: all 1.2s;
+}
 .show {
   opacity: 1;
   filter: blur(0);
@@ -104,9 +110,20 @@ header {
 }
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
+}
+@media(min-width: 1650px){
+  .navbar{
+    max-width: 70%;
+    gap: 25rem;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .nav-menu {
   float: right;
@@ -114,32 +131,39 @@ header {
   flex-direction: row;
   /*justify-content: space-between;
     align-items: center; */
-  gap: 40px;
+  gap: 2.6rem;
   padding: 14px 0;
   margin: 0;
 }
 .logo {
-  display: inline;
-  flex-direction: row;
+  display: flex;
+  gap: 10px;
   text-align: center;
+  align-items: center;
+  padding: 0 12px;
 }
 .logo .nav-branding {
   font-family: aquire;
   display: inline-block;
-  font-size: 1.6rem;
+  letter-spacing: 1.8px;
+  font-size: 1.8rem;
   /* padding: 4px; */
   font-weight: bold;
-  background: linear-gradient(to right, rgb(78, 78, 244), rgb(72, 231, 245));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: none;
+  color: aqua;
+  /* display: none; */
+}
+.logo .nav-image{
+  width: 32px; height: 32px;
+}
+.logo .nav-image img{
+  width: 100%; height: 100%;
+  object-fit: cover;
 }
 .nav-link {
   font-family: aquire;
-  padding: 20px 10px;
+  padding: 20px 3px;
   transition: 0.2s ease;
-  font-size: 1.1rem;
+  font-size: 16px;
   font-weight: bold;
   color: #ffffff;
   position: relative;
@@ -150,6 +174,7 @@ header {
 }
 .nav-item i {
   color: #fff;
+  font-size: 16px;
 }
 .nav-link::before {
   content: "";
@@ -396,10 +421,9 @@ header {
 /* About sec */
 .about {
   background: rgb(13, 12, 32);
-  /* height: 100vh; */
+  overflow: hidden;
   width: 100%;
   display: flex;
-  /* padding: 10px 0; */
 }
 .about .about-me {
   flex: 1 1 450px;
@@ -469,7 +493,7 @@ header {
 }
 @media (max-width: 480px) {
   .about .about-me p {
-    font-size: 18px;
+    font-size: 15.6px;
   }
 }
 /* End About sec */
@@ -485,6 +509,7 @@ header {
   padding: 50px 0;
   width: 100%;
   background: #222;
+  overflow: hidden;
 }
 .service h1 {
   width: fit-content;
@@ -580,6 +605,7 @@ header {
   margin-top: 15px;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 .p-lang h2 {
   font-size: 25px;
@@ -629,6 +655,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 .project .head {
   display: flex;
@@ -781,7 +808,7 @@ header {
 }
 @media (max-width: 480px) {
   .project .content .detail p {
-    font-size: 15px;
+    font-size: 14px;
   }
   .project .content .detail .tech h3 {
     font-size: 14.8px;

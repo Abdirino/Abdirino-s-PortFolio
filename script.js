@@ -14,6 +14,22 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 // end on-scroll animation
 
+// on-scroll animation
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    // console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      // entry.target.classList.remove('show')
+    }
+  });
+});
+
+const hiddenElements2 = document.querySelectorAll(".hidden2");
+hiddenElements2.forEach((el) => observer2.observe(el));
+// end on-scroll animation
+
 
 // scroll to top button
 const toTop = () => {
