@@ -8,18 +8,33 @@
   font-family: mono;
   src: url(Monoton1/Monoton-Regular.ttf);
 }
+
+:root {
+  --PrimaryBg: rgb(0, 0, 0);
+  --HeadBg: #01e1ff;
+  --NavBg: #ffffff;
+  --aboutLight: rgba(13, 12, 32);
+  --textColor: rgb(255, 255, 255);
+}
+.light-theme{
+  --PrimaryBg: #ffffff;
+  --HeadBg: #024149c9;
+  --NavBg: #024149c9;
+  --aboutLight: rgb(255, 255, 255);
+  --textColor: black;
+}
 /* on-scroll animation */
 .hidden {
   opacity: 0;
   filter: blur(4px);
   transform: translateX(-50%);
-  transition: all 1.2s;
+  transition: all 880ms;
 }
 .hidden2 {
   opacity: 0;
   filter: blur(4px);
   transform: translateX(50%);
-  transition: all 1.2s;
+  transition: all 880ms;
 }
 .show {
   opacity: 1;
@@ -34,7 +49,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Roboto", sans-serif;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: 0.2s ease;
   cursor: url(images/3d-pointer-28.png), default;
 }
@@ -45,7 +60,7 @@
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: #01e1ff;
+  -webkit-text-stroke-color: var(--HeadBg);
   position: relative;
 }
 @media (max-width: 480px) {
@@ -92,7 +107,7 @@ title {
   background: #1b1729;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3ca8e7;
+  background: var(--HeadBg);
   border-radius: 3px;
 }
 html {
@@ -100,7 +115,7 @@ html {
 }
 /* nav sec */
 header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
   right: 0;
@@ -113,6 +128,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
+}
+.nav-rest{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .nav-menu {
   float: right;
@@ -150,13 +170,23 @@ header {
   height: 100%;
   object-fit: cover;
 }
+.bg-mode {
+  width: 21px;
+  height: 21px;
+}
+.bg-mode img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .nav-link {
   font-family: aquire;
+  letter-spacing: 1px;
   padding: 20px 3px;
   transition: 0.2s ease;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--NavBg);
   position: relative;
 }
 .nav-link:hover {
@@ -164,8 +194,8 @@ header {
   border-radius: 5px;
 }
 .nav-item i {
-  color: #fff;
-  font-size: 16px;
+  color: var(--NavBg);
+  font-size: 15px;
 }
 .nav-link::before {
   content: "";
@@ -174,7 +204,7 @@ header {
   top: 45px;
   width: 100%;
   height: 4px;
-  background: rgb(25, 198, 198);
+  background: var(--HeadBg);
   z-index: -1;
   transition: transform 0.5s;
   transform-origin: 0 0;
@@ -185,9 +215,6 @@ header {
 }
 .nav-link:hover::before {
   transform: scaleX(1);
-}
-.nav-item:hover .nav-link {
-  color: #01e1ff;
 }
 .checkbtn {
   color: aqua;
@@ -209,7 +236,7 @@ header {
   margin: 5px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background-color: #3cd3e7;
+  background-color: var(--HeadBg);
 }
 
 @media (min-width: 1650px) {
@@ -221,6 +248,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .nav-link, .nav-item i{
+    font-size: 19px;
   }
 }
 
@@ -290,7 +320,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(0, 0, 0);
+  background: var(--PrimaryBg);
   /* -webkit-animation: color-change-3x 4s linear infinite alternate both;
   animation: color-change-3x 4s linear infinite alternate both; */
 }
@@ -304,6 +334,7 @@ header {
 }
 .home .greet h1 {
   font-family: aquire;
+  /* color: var(--HeadBg); */
   padding: 8px 18px;
   background-clip: text;
   padding-bottom: 25px;
@@ -317,7 +348,7 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; */
-  color: white;
+  color: var(--textColor);
   letter-spacing: 2px;
   padding-bottom: 12px;
   font-size: 27px;
@@ -423,10 +454,12 @@ header {
 
 /* About sec */
 .about {
-  background: rgb(13, 12, 32);
+  background: var(--aboutLight);
   overflow: hidden;
   width: 100%;
   display: flex;
+  border-top: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 .about .about-me {
   flex: 1 1 450px;
@@ -438,9 +471,16 @@ header {
 }
 .about .about-me h1 {
   font-family: aquire;
-  font-size: 40px;
+  font-size: 19px;
   font-weight: bold;
-  margin: 24px;
+  margin: 8px 24px;
+  padding: 5px;
+}
+.about-me .h12{
+  font-family: aquire;
+  font-size: 28px !important;
+  font-weight: bold;
+  margin: 4px 24px;
   padding: 5px;
 }
 .about .about-me p {
@@ -450,11 +490,17 @@ header {
   font-size: 19px;
   padding: 5px;
   margin: 10px 24px;
-  color: rgb(255, 255, 255);
+  color: var(--textColor);
 }
 @media (min-width: 1560px) {
+  .about-me{
+    padding: 0 1rem;
+  }
   .about .about-me p {
     font-size: 26px;
+  }
+  .about-me .h12{
+    font-size: 45px;
   }
 }
 .about-me .buttons {
@@ -467,22 +513,23 @@ header {
   border-radius: 4px;
   font-family: aquire;
   font-size: 19px;
-  border: 2px solid aqua;
+  border: 2px solid var(--HeadBg);
   margin: 22px 24px;
-  color: rgb(0, 221, 255);
+  color: var(--HeadBg);
   font-weight: bold;
   transition: 0.3s ease;
 }
 .about-me a:hover {
-  background: aqua;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 0 50px aqua;
+  background: var(--HeadBg);
+  color: white;
+  box-shadow: 0 0 50px var(--HeadBg);
 }
 .about .img {
+  padding: 2rem;
   flex: 1 1 450px;
 }
 .about .img img {
-  border-radius: 7px;
+  border-radius: 8px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -511,13 +558,13 @@ header {
   margin: 0 auto;
   padding: 50px 0;
   width: 100%;
-  background: #222;
+  background: var(--PrimaryBg);
   overflow: hidden;
 }
 .service h1 {
   width: fit-content;
   font-family: aquire;
-  font-size: 45px;
+  font-size: 40px;
   padding: 13px;
   padding-bottom: 30px;
 }
@@ -622,7 +669,7 @@ header {
 .p-lang .class p {
   display: inline;
   font-family: "Poppins", sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--NavBg);
   font-size: 12px;
 }
 .p-lang i {
@@ -821,8 +868,9 @@ header {
 
 /* contact sec */
 .contact {
-  background: #222;
+  background: var(--PrimaryBg);
   padding: 60px 0;
+  overflow: hidden;
 }
 .contact .row {
   display: flex;
@@ -860,7 +908,7 @@ header {
   padding: 15px 0;
   width: fit-content;
   font-family: aquire;
-  color: rgb(5, 252, 252);
+  color: var(--HeadBg);
 }
 .c-info {
   display: flex;
@@ -868,13 +916,13 @@ header {
 }
 .contact-left p {
   font-size: 17px;
-  color: white;
+  color: var(--textColor);
   margin: 14px 0;
 }
 .contact-left .c-info i {
-  color: aqua;
+  color: var(--HeadBg);
   margin-right: 8px;
-  font-size: 20px;
+  font-size: 21px;
 }
 .social-icons {
   margin-top: 30px;
@@ -882,7 +930,7 @@ header {
 .social-icons a i {
   font-size: 35px;
   margin-right: 15px;
-  color: aqua;
+  color: var(--HeadBg);
   display: inline-block;
   transition: all 0.4s ease;
 }
@@ -890,10 +938,10 @@ header {
   transform: scale(1.12);
 }
 .contact-left .bxs-up-arrow-square {
-  color: aqua;
-  font-size: 35px;
+  color: var(--HeadBg);
+  font-size: 50px;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px 15px 30px 0;
 }
 .contact-left .bxs-up-arrow-square:hover {
   transform: scale(1.1);
@@ -906,9 +954,9 @@ form textarea {
   width: 93%;
   border: 0;
   outline: none;
-  background: rgba(1, 1, 1, 0.4);
+  background: rgba(186, 185, 185, 0.2);
   padding: 15px;
-  margin: 10px 0 10px 10px;
+  margin: 10px 10px 10px 10px;
   color: white;
   font-size: 18px;
   border-radius: 4px;
@@ -917,25 +965,25 @@ form button {
   width: 93%;
   border: 0;
   outline: none;
-  border: 2px solid rgb(1, 223, 252);
+  border: 2px solid var(--HeadBg);
   padding: 15px 30px;
   margin: 10px;
   background: transparent;
-  color: aqua;
+  color: var(--textColor);
   font-size: 20px;
   border-radius: 4px;
   font-family: aquire;
   transition: 0.4s ease;
 }
 form button:hover {
-  background: aqua;
-  color: black;
-  box-shadow: 0 0 60px aqua;
+  background: var(--HeadBg);
+  color: white;
+  box-shadow: 0 0 60px var(--HeadBg);
 }
 form button:active {
   background: rgb(11, 109, 109);
   color: black;
-  box-shadow: 0 0 60px aqua;
+  box-shadow: 0 0 60px var(--HeadBg);
 }
 #msg {
   color: aqua;
@@ -949,17 +997,18 @@ form button:active {
 .copy {
   width: 100%;
   padding: 7px;
-  background: black;
+  background: var(--PrimaryBg);
+  border-top: 1px solid rgb(38, 38, 38);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .copy p {
-  font-size: 18px;
-  padding: 0 5px;
+  font-size: 17px;
+  padding: 8px;
   font-family: aquire;
-  color: #3ca8e7;
+  color: var(--textColor);
 }
 @media (max-width: 990px) {
   .copy p {

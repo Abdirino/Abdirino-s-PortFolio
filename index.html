@@ -50,39 +50,43 @@
       <nav class="navbar">
         <div class="logo">
           <div class="nav-image">
-            <img src="./ux.png" alt="">
+            <img src="./ux.png" alt="" />
           </div>
           <!-- <a href="#" class="nav-branding">AR</a> -->
         </div>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </label>
-
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <i class="fa-solid fa-house"></i>
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <i class="fa-solid fa-circle-info"></i>
-            <a href="#about" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
-            <i class="fa-solid fa-computer"></i>
-            <a href="#service" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <i class="fa-solid fa-briefcase"></i>
-            <a href="#project" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <i class="fa-solid fa-address-book"></i>
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
+        <div class="nav-rest">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <i class="fa-solid fa-house"></i>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-circle-info"></i>
+              <a href="#about" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-computer"></i>
+              <a href="#service" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="#project" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-address-book"></i>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="bg-mode">
+            <img src="./images/sun.png" id="mode-icon" alt="" />
+          </div>
+        </div>
       </nav>
     </header>
     <!-- end nav sec -->
@@ -126,13 +130,16 @@
     <div class="about" id="about">
       <div class="about-me">
         <h1 class="hidden">About Me</h1>
+        <h1 class="hidden h12">
+          Unlocking Digital Brilliance: Elevate Your Online Presence!
+        </h1>
         <p class="hidden">
           Highly motivated front-end developer passionate about creating
-          captivating digital experiences. Expertise in HTML, CSS, JavaScript,
-          and React, seamlessly blending design and functionality for
-          exceptional user experiences. I thrives on challenges, continuously
-          expanding skill set, and staying up-to-date with emerging
-          technologies. Welcome to my portfolio!
+          captivating digital experiences. I develope simple, intuitive and
+          responsive user interfaces that helps users get things done with less
+          effort and time. I thrives on challenges, continuously expanding skill
+          set, and staying up-to-date with emerging technologies. Welcome to my
+          portfolio!
         </p>
         <div class="buttons hidden">
           <a href="./Abdirahman_Abdulaziz_Resume.pdf" class="hidden" download
@@ -152,7 +159,7 @@
     <!-- service sec -->
 
     <div class="service" id="service">
-      <h1>Services</h1>
+      <h1>Services & Skills</h1>
       <div class="contents">
         <div class="card hidden">
           <div class="up-content">
@@ -454,16 +461,30 @@
           <i onclick="toTop()" class="bx bxs-up-arrow-square"></i>
         </div>
 
-        <div class="contact-right hidden">
+        <div class="contact-right hidden2">
           <form name="submit-to-google-sheet" autocomplete="off">
-            <input type="text" name="Name" placeholder="Name" required />
-            <input type="email" name="Email" placeholder="Email" required />
-            <input type="text" name="Subject" placeholder="Subject" required />
-            <!-- <input type="text" name="subject" placeholder="Subject" required /> -->
+            <input
+              type="text"
+              name="Name"
+              placeholder="Name e.g John Doe"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="E-mail e.g johndoe@gmail.com"
+              required
+            />
+            <input
+              type="text"
+              name="Subject"
+              placeholder="Your Subject"
+              required
+            />
             <textarea
               name="Message"
               rows="6"
-              placeholder="Message"
+              placeholder="Write Message"
               required
             ></textarea
             ><br />
@@ -478,9 +499,9 @@
     <!-- copy right -->
     <div class="copy">
       <p class="hidden">
-        Copyright&copy;
+        Copyright&copy; All rights reserved
         <span id="year"></span>
-        @Abdirino-s-Portfolio All rights reserved
+        @Abdirino-s-Portfolio
       </p>
     </div>
     <!-- end copy right -->

@@ -30,13 +30,11 @@ const hiddenElements2 = document.querySelectorAll(".hidden2");
 hiddenElements2.forEach((el) => observer2.observe(el));
 // end on-scroll animation
 
-
 // scroll to top button
 const toTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 // end scroll to top button
-
 
 // contact sec
 const scriptURL =
@@ -62,7 +60,6 @@ const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
 // end copyright
 
-
 // hamburger sec
 const barMenu = document.querySelector(".checkbtn");
 
@@ -72,3 +69,16 @@ function mobileMenu() {
   barMenu.classList.toggle("active");
 }
 // hamburger sec
+
+// Background Mode
+let modeIcon = document.querySelector("#mode-icon");
+
+modeIcon.onclick = function () {
+  document.body.classList.toggle("light-theme");
+  if (document.body.classList.contains("light-theme")) {
+    modeIcon.src = "./images/moon.png";
+  } else {
+    modeIcon.src = "./images/sun.png";
+  }
+};
+// Background Mode
