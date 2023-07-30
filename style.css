@@ -16,7 +16,7 @@
   --aboutLight: rgba(13, 12, 32);
   --textColor: rgb(255, 255, 255);
 }
-.light-theme{
+.light-theme {
   --PrimaryBg: #ffffff;
   --HeadBg: #024149c9;
   --NavBg: #024149c9;
@@ -129,7 +129,7 @@ header {
   align-items: center;
   padding: 5px 10px;
 }
-.nav-rest{
+.nav-rest {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -249,7 +249,8 @@ header {
     justify-content: center;
     align-items: center;
   }
-  .nav-link, .nav-item i{
+  .nav-link,
+  .nav-item i {
     font-size: 19px;
   }
 }
@@ -275,6 +276,9 @@ header {
   #check:checked ~ .nav-menu {
     left: 0;
   }
+  .nav-link:checked ~ .nav-menu {
+    left: -100%;
+  }
 
   .nav-branding {
     font-size: 1.8rem;
@@ -293,7 +297,7 @@ header {
     top: 60px;
     gap: 0;
     flex-direction: column;
-    background-color: #181524;
+    background-color: var(--PrimaryBg);
     width: 100vw;
     text-align: center;
     transition: 0.3s;
@@ -301,14 +305,11 @@ header {
   #check:checked ~ .nav-menu {
     left: 0;
   }
-  .nav-item {
-    margin: 14px 0;
-  }
-  .nav-menu:checked .nav-link:active {
+  .nav-link:checked ~ .nav-menu {
     left: -100%;
   }
-  .nav-link:active ~ .nav-menu {
-    left: 0;
+  .nav-item {
+    margin: 14px 0;
   }
 }
 /* close nav sec */
@@ -471,14 +472,14 @@ header {
 }
 .about .about-me h1 {
   font-family: aquire;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
   margin: 8px 24px;
   padding: 5px;
 }
-.about-me .h12{
+.about-me .h12 {
   font-family: aquire;
-  font-size: 28px !important;
+  font-size: 30px !important;
   font-weight: bold;
   margin: 4px 24px;
   padding: 5px;
@@ -493,13 +494,13 @@ header {
   color: var(--textColor);
 }
 @media (min-width: 1560px) {
-  .about-me{
+  .about-me {
     padding: 0 1rem;
   }
   .about .about-me p {
     font-size: 26px;
   }
-  .about-me .h12{
+  .about-me .h12 {
     font-size: 45px;
   }
 }
@@ -525,11 +526,11 @@ header {
   box-shadow: 0 0 50px var(--HeadBg);
 }
 .about .img {
-  padding: 2rem;
+  padding: 1.8rem;
   flex: 1 1 450px;
 }
 .about .img img {
-  border-radius: 8px;
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -544,6 +545,9 @@ header {
 @media (max-width: 480px) {
   .about .about-me p {
     font-size: 14.6px;
+  }
+  .about .img {
+    padding: 0 !important;
   }
 }
 /* End About sec */
@@ -815,7 +819,7 @@ header {
   color: rgb(0, 0, 0);
 }
 .project .content .detail i:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .project .content .detail .tech h3 {
   font-size: 19px;
