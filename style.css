@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200;1,600&family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;700&family=Poppins:ital,wght@0,400;0,500;1,600&family=Roboto+Slab:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 
 @font-face {
   font-family: aquire;
@@ -162,8 +163,8 @@ header {
   /* display: none; */
 }
 .logo .nav-image {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
 }
 .logo .nav-image img {
   width: 100%;
@@ -180,11 +181,11 @@ header {
   object-fit: cover;
 }
 .nav-link {
-  font-family: aquire;
+  font-family: 'Sail', cursive;
   letter-spacing: 1px;
   padding: 20px 3px;
   transition: 0.2s ease;
-  font-size: 15px;
+  font-size: 21px;
   font-weight: bold;
   color: var(--NavBg);
   position: relative;
@@ -252,6 +253,10 @@ header {
   .nav-link,
   .nav-item i {
     font-size: 19px;
+  }
+  .logo .nav-image {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -339,11 +344,11 @@ header {
   padding: 8px 18px;
   background-clip: text;
   padding-bottom: 25px;
-  font-size: 60px;
+  font-size: 64px;
   font-weight: bold;
 }
 .home .greet h3 {
-  font-family: aquire;
+  font-family: 'Sail', cursive;
   padding: 5px 18px;
   /* background: linear-gradient(to right, rgb(1, 179, 210), rgb(0, 99, 247));
   -webkit-background-clip: text;
@@ -352,7 +357,7 @@ header {
   color: var(--textColor);
   letter-spacing: 2px;
   padding-bottom: 12px;
-  font-size: 27px;
+  font-size: 34px;
   font-weight: bold;
 }
 .home-button {
@@ -363,7 +368,7 @@ header {
 .home-button button {
   padding: 10px 25px;
   border: none;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   background: rgb(4, 188, 188);
   color: black;
@@ -471,6 +476,7 @@ header {
   border-radius: 15px;
 }
 .about .about-me h1 {
+  font-family: 'Sail', cursive;
   font-family: aquire;
   font-size: 18px;
   font-weight: bold;
@@ -479,7 +485,7 @@ header {
 }
 .about-me .h12 {
   font-family: aquire;
-  font-size: 30px !important;
+  font-size: 39px !important;
   font-weight: bold;
   margin: 4px 24px;
   padding: 5px;
@@ -769,7 +775,7 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 23px;
+  font-size: 25px;
   letter-spacing: 1px;
   margin: 5px;
   padding: 10px 5px;
@@ -822,7 +828,7 @@ header {
   transform: scale(1.05);
 }
 .project .content .detail .tech h3 {
-  font-size: 19px;
+  font-size: 17px;
   letter-spacing: 1px;
   margin: 6px;
   padding: 6px;
