@@ -240,7 +240,7 @@ header {
   background-color: var(--HeadBg);
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1680px) {
   .navbar {
     max-width: 75%;
     gap: 30rem;
@@ -381,12 +381,12 @@ header {
   background: rgba(4, 145, 150, 0.7);
   color: white;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1670px) {
   .home .greet h1 {
-    font-size: 90px;
+    font-size: 99px;
   }
   .home .greet h3 {
-    font-size: 35px;
+    font-size: 42px;
   }
 }
 .home .greet p {
@@ -484,19 +484,21 @@ header {
   padding: 5px;
 }
 .about-me .h12 {
-  font-family: aquire;
+  font-family: 'Sail', cursive;
   font-size: 39px !important;
+  letter-spacing: 1px;
+  color: var(--HeadBg);
   font-weight: bold;
-  margin: 4px 24px;
+  margin: 6px 21px;
   padding: 5px;
 }
 .about .about-me p {
   font-family: "Poppins", sans-serif;
   text-transform: none;
   gap: 20px;
-  font-size: 19px;
+  font-size: 17px;
   padding: 5px;
-  margin: 10px 24px;
+  margin: 10px 21px;
   color: var(--textColor);
 }
 @media (min-width: 1560px) {
@@ -504,7 +506,7 @@ header {
     padding: 0 1rem;
   }
   .about .about-me p {
-    font-size: 26px;
+    font-size: 27px;
   }
   .about-me .h12 {
     font-size: 45px;
@@ -516,10 +518,10 @@ header {
   align-items: center;
 }
 .about-me a {
-  padding: 12px 24px;
+  padding: 12px 25px;
   border-radius: 4px;
   font-family: aquire;
-  font-size: 19px;
+  font-size: 18px;
   border: 2px solid var(--HeadBg);
   margin: 22px 24px;
   color: var(--HeadBg);
@@ -532,7 +534,7 @@ header {
   box-shadow: 0 0 50px var(--HeadBg);
 }
 .about .img {
-  padding: 1.8rem;
+  padding: 2rem;
   flex: 1 1 450px;
 }
 .about .img img {
@@ -633,10 +635,10 @@ header {
   transition-delay: 400ms;
 }
 .service .card .up-content h2 {
-  font-size: 22px;
+  font-size: 32px;
   letter-spacing: 1px;
   padding: 20px 0 15px 0;
-  font-family: aquire;
+  font-family: 'Sail', cursive;
   color: #01e1ff;
   position: relative;
   z-index: 2;
@@ -775,11 +777,11 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 25px;
+  font-size: 39px;
   letter-spacing: 1px;
   margin: 5px;
   padding: 10px 5px;
-  font-family: aquire;
+  font-family: 'Sail', cursive;
   /* border-bottom: 3px solid rgb(15, 201, 139); */
   color: aquamarine;
   background: linear-gradient(to right, rgb(3, 81, 248), rgb(7, 187, 203));
@@ -810,8 +812,8 @@ header {
 .detail .live-view a h3 {
   letter-spacing: 1px;
   padding: 8px 40px;
-  font-size: 18px !important;
-  font-weight: 450;
+  font-size: 17px !important;
+  font-weight: lighter;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   background: rgba(1, 72, 72, 0.5);
@@ -828,13 +830,11 @@ header {
   transform: scale(1.05);
 }
 .project .content .detail .tech h3 {
-  font-size: 17px;
+  font-size: 21px;
   letter-spacing: 1px;
   margin: 6px;
   padding: 6px;
-  /* width: fit-content; */
-  font-family: aquire;
-  /* border-bottom: 3px solid rgb(34, 207, 178); */
+  font-family: 'Sail', cursive;
   background: linear-gradient(to right, rgb(0, 62, 248), rgb(7, 198, 215));
   -webkit-background-clip: text;
   background-clip: text;
@@ -872,6 +872,9 @@ header {
   }
   .project .content .detail .tech h3 {
     font-size: 14.8px;
+  }
+  .project .content .detail h2 {
+    font-size: 21px;
   }
 }
 /* end project sec */
@@ -913,11 +916,12 @@ header {
   font-family: aquire;
 }
 .contact-left h2 {
-  font-size: 34px;
+  font-size: 39px;
+  letter-spacing: 1px;
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
-  font-family: aquire;
+  font-family: 'Sail', cursive;
   color: var(--HeadBg);
 }
 .c-info {
@@ -928,6 +932,7 @@ header {
   font-size: 17px;
   color: var(--textColor);
   margin: 14px 0;
+  letter-spacing: 1px;
 }
 .contact-left .c-info i {
   color: var(--HeadBg);
@@ -970,6 +975,7 @@ form textarea {
   color: white;
   font-size: 18px;
   border-radius: 4px;
+  letter-spacing: 1px;
 }
 form button {
   width: 93%;
