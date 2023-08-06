@@ -48,7 +48,7 @@ form.addEventListener("submit", (e) => {
       msg.innerHTML = "Message sent Successfully.";
       setTimeout(function () {
         msg.innerHTML = "";
-      }, 1000);
+      }, 700);
       form.reset();
     })
     .catch((error) => console.error("Error!", error.message));

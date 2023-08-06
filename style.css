@@ -489,7 +489,7 @@ header {
   letter-spacing: 1px;
   color: var(--HeadBg);
   font-weight: bold;
-  margin: 6px 21px;
+  margin: 6px 24px;
   padding: 5px;
 }
 .about .about-me p {
@@ -498,7 +498,7 @@ header {
   gap: 20px;
   font-size: 17px;
   padding: 5px;
-  margin: 10px 21px;
+  margin: 10px 24px;
   color: var(--textColor);
 }
 @media (min-width: 1560px) {
@@ -777,7 +777,7 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 39px;
+  font-size: 42px;
   letter-spacing: 1px;
   margin: 5px;
   padding: 10px 5px;
