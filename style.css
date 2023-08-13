@@ -497,6 +497,7 @@ header {
   text-transform: none;
   gap: 20px;
   font-size: 17px;
+  letter-spacing: 0.3px;
   padding: 5px;
   margin: 10px 24px;
   color: var(--textColor);
@@ -635,7 +636,7 @@ header {
   transition-delay: 400ms;
 }
 .service .card .up-content h2 {
-  font-size: 32px;
+  font-size: 37px;
   letter-spacing: 1px;
   padding: 20px 0 15px 0;
   font-family: 'Sail', cursive;
@@ -963,6 +964,15 @@ header {
 }
 .contact-right form {
   width: 100%;
+}
+.contact-right h2 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  padding: 8px;
+  width: fit-content;
+  font-family: 'Sail', cursive;
+  color: var(--HeadBg);
 }
 form input,
 form textarea {
