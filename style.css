@@ -467,6 +467,9 @@ header {
   border-top: 1px solid rgb(0, 0, 0);
   border-bottom: 1px solid rgb(0, 0, 0);
 }
+.About{
+  display: flex;
+}
 .about .about-me {
   flex: 1 1 450px;
   display: flex;
