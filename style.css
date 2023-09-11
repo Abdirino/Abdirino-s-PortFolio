@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200;1,600&family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;700&family=Poppins:ital,wght@0,400;0,500;1,600&family=Roboto+Slab:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
 @font-face {
   font-family: aquire;
   src: url(aquire-font/Aquire-BW0ox.otf);
@@ -181,7 +183,7 @@ header {
   object-fit: cover;
 }
 .nav-link {
-  font-family: 'Sail', cursive;
+  font-family: 'Germania One', cursive;
   letter-spacing: 1px;
   padding: 20px 3px;
   transition: 0.2s ease;
@@ -348,7 +350,7 @@ header {
   font-weight: bold;
 }
 .home .greet h3 {
-  font-family: 'Sail', cursive;
+  font-family: 'Germania One', cursive;
   padding: 5px 18px;
   /* background: linear-gradient(to right, rgb(1, 179, 210), rgb(0, 99, 247));
   -webkit-background-clip: text;
@@ -487,7 +489,7 @@ header {
   padding: 5px;
 }
 .about-me .h12 {
-  font-family: 'Sail', cursive;
+  font-family: 'Germania One', cursive;
   font-size: 39px !important;
   letter-spacing: 1px;
   color: var(--HeadBg);
@@ -651,7 +653,7 @@ header {
   font-size: 37px;
   letter-spacing: 1px;
   padding: 20px 0 15px 0;
-  font-family: 'Sail', cursive;
+  font-family: 'Germania One', cursive;
   color: #01e1ff;
   position: relative;
   z-index: 2;
@@ -792,13 +794,14 @@ header {
   letter-spacing: 1px;
   margin: 5px;
   padding: 10px 5px;
-  font-family: 'Sail', cursive;
+  font-family: 'Germania One', cursive;
   /* border-bottom: 3px solid rgb(15, 201, 139); */
   color: aquamarine;
   background: linear-gradient(to right, rgb(3, 81, 248), rgb(7, 187, 203));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
 }
 .project .content .detail p {
   font-size: 16px;
@@ -932,7 +935,7 @@ header {
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
-  font-family: 'Sail', cursive;
+  font-family: 'Germania One', cursive;
   color: var(--HeadBg);
 }
 .c-info {
@@ -976,12 +979,12 @@ header {
   width: 100%;
 }
 .contact-right h2 {
-  font-size: 32px;
+  font-size: 30px;
   letter-spacing: 1px;
   margin: 10px 0;
   padding: 8px;
   width: fit-content;
-  font-family: 'Sail', cursive;
+  font-family: 'Germania One', cursive;
   color: var(--HeadBg);
 }
 form input,
