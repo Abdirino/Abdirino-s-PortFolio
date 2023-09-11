@@ -557,6 +557,16 @@ header {
   .Home {
     flex-wrap: wrap;
   }
+  .home .Home .greet {
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex: 1 1 750px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
 }
 @media (max-width: 990px) {
   .home .greet h3 {
