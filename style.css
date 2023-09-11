@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200;1,600&family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;700&family=Poppins:ital,wght@0,400;0,500;1,600&family=Roboto+Slab:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sail&display=swap");
 /* H2 Font */
-@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 /* H1 Font */
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Denk+One&display=swap");
 
 @font-face {
   font-family: aquire;
@@ -186,7 +186,7 @@ header {
   object-fit: cover;
 }
 .nav-link {
-  font-family: 'Germania One', cursive;
+  font-family: "Germania One", cursive;
   letter-spacing: 1px;
   padding: 20px 3px;
   transition: 0.2s ease;
@@ -335,38 +335,44 @@ header {
   /* -webkit-animation: color-change-3x 4s linear infinite alternate both;
   animation: color-change-3x 4s linear infinite alternate both; */
 }
-.home .greet {
+.Home {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.home .Home .greet {
   font-weight: bold;
   color: white;
   display: flex;
+  flex: 1 1 750px;
   justify-content: center;
   align-items: flex-start;
+  /* text-align: center; */
   flex-direction: column;
 }
 .home .greet h1 {
-  font-family: 'Monoton', cursive;
+  font-family: "Germania One", cursive;
   /* color: var(--HeadBg); */
-  padding: 0 18px;
+  padding: 11px 18px;
   background-clip: text;
-  /* padding-bottom: 25px; */
-  font-size: 35px;
+  font-size: 54px;
   font-weight: bold;
 }
 .home .greet h3 {
-  font-family: 'Germania One', cursive;
-  padding: 5px 18px;
+  font-family: "Germania One", cursive;
+  padding: 4px 18px;
   /* background: linear-gradient(to right, rgb(1, 179, 210), rgb(0, 99, 247));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; */
   color: var(--textColor);
   letter-spacing: 2px;
-  padding-bottom: 12px;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: bold;
 }
 .home-button {
-  padding: 10px 14px;
+  padding: 18px 14px;
   display: flex;
   align-items: center;
 }
@@ -386,12 +392,121 @@ header {
   background: rgba(4, 145, 150, 0.7);
   color: white;
 }
-@media (min-width: 1670px) {
-  .home .greet h1 {
-    font-size: 90px;
+
+.Home .h-image {
+  display: flex;
+  flex: 1 1 300px;
+  margin: auto;
+}
+.box {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: rgba(6, 150, 160, 0.6);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: -10px 140px;
+  background: linear-gradient(315deg, rgb(0, 247, 255), #59fa39fe);
+  transition: 0.5s;
+  animation: rotate 4s linear infinite;
+}
+.box:hover::before {
+  inset: -20px 0px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  .home .greet h3 {
-    font-size: 42px;
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background: #201d35;
+  border-radius: 50%;
+  z-index: 1;
+}
+.box-content {
+  position: absolute;
+  inset: 20px;
+  border: 6px solid #070a1c;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.box-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+.box:hover .box-content img {
+  opacity: 0;
+}
+
+.box-content h2 {
+  position: relative;
+  font-size: 2em;
+  text-align: center;
+  color: var(--HeadBg);
+  font-weight: 600;
+  font-family: "Germania One", cursive;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+.box-content h2 span {
+  position: relative;
+  font-size: 0.65em !important;
+  text-align: center;
+  color: var(--textColor);
+  font-weight: 300;
+  font-family: "Germania One", cursive;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.box-content a {
+  position: relative;
+  margin-top: 10px;
+  padding: 9px 18px;
+  background: rgb(4, 188, 188);
+  color: black;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.box-content a:hover {
+  background: rgba(4, 145, 150, 0.7);
+  color: white;
+}
+
+@media (min-width: 1670px) {
+  .Home {
+    gap: 12rem;
   }
 }
 .home .greet p {
@@ -437,20 +552,29 @@ header {
     background: #063c42;
   }
 }
+
+@media (max-width: 1070px) {
+  .Home {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 990px) {
   .home .greet h3 {
     font-size: 22px;
   }
   .home .greet h1 {
-    font-size: 50px;
+    font-size: 46px;
+  }
+  .h-image{
+    margin: auto !important;
   }
 }
 @media (max-width: 480px) {
   .home .greet h3 {
-    font-size: 22px;
+    font-size: 21px;
   }
   .home .greet h1 {
-    font-size: 41px;
+    font-size: 35px;
   }
   .home-button {
     gap: 3px !important;
@@ -472,7 +596,7 @@ header {
   border-top: 1px solid rgb(0, 0, 0);
   border-bottom: 1px solid rgb(0, 0, 0);
 }
-.About{
+.About {
   display: flex;
 }
 .about .about-me {
@@ -484,14 +608,14 @@ header {
   border-radius: 15px;
 }
 .about .about-me h1 {
-  font-family: 'Monoton', cursive;
+  font-family: "Germania One", cursive;
   font-size: 17px;
   font-weight: bold;
   margin: 8px 24px;
   padding: 5px;
 }
 .about-me .h12 {
-  font-family: 'Germania One', cursive;
+  font-family: "Germania One", cursive;
   font-size: 39px !important;
   letter-spacing: 1px;
   color: var(--HeadBg);
@@ -510,12 +634,12 @@ header {
   color: var(--textColor);
 }
 @media (min-width: 1560px) {
-  .about{
+  .about {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .About{
+  .About {
     max-width: 70%;
     display: flex;
   }
@@ -537,13 +661,14 @@ header {
 .about-me a {
   padding: 12px 25px;
   border-radius: 4px;
-  font-family: aquire;
+  font-family: "Germania One", cursive;
   font-size: 18px;
   border: 2px solid var(--HeadBg);
   margin: 22px 24px;
   color: var(--HeadBg);
   font-weight: bold;
   transition: 0.3s ease;
+  letter-spacing: 0.7px;
 }
 .about-me a:hover {
   background: var(--HeadBg);
@@ -563,7 +688,7 @@ header {
 }
 
 @media (max-width: 900px) {
-  .about {
+  .About {
     flex-wrap: wrap;
   }
 }
@@ -592,8 +717,8 @@ header {
 }
 .service h1 {
   width: fit-content;
-  font-family: 'Monoton', cursive;
-  font-size: 39px;
+  font-family: "Germania One", cursive;
+  font-size: 45px;
   padding: 13px;
   padding-bottom: 30px;
 }
@@ -655,7 +780,7 @@ header {
   font-size: 37px;
   letter-spacing: 1px;
   padding: 20px 0 15px 0;
-  font-family: 'Germania One', cursive;
+  font-family: "Germania One", cursive;
   color: #01e1ff;
   position: relative;
   z-index: 2;
@@ -743,12 +868,12 @@ header {
   flex-direction: column;
 }
 .project .head h1 {
-  font-size: 39px;
+  font-size: 45px;
   color: #024149c9 !important;
   margin: 6px;
   padding: 8px;
   width: fit-content;
-  font-family: 'Monoton', cursive;
+  font-family: "Germania One", cursive;
 }
 .project .head a:hover {
   color: black;
@@ -792,11 +917,11 @@ header {
   /* box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.2); */
 }
 .project .content .detail h2 {
-  font-size: 39px;
+  font-size: 35px;
   letter-spacing: 1px;
   margin: 5px;
   padding: 10px 5px;
-  font-family: 'Germania One', cursive;
+  font-family: "Germania One", cursive;
   /* border-bottom: 3px solid rgb(15, 201, 139); */
   /* background: linear-gradient(to right, rgb(0, 62, 248), rgb(25, 112, 243));
   -webkit-background-clip: text;
@@ -850,11 +975,8 @@ header {
   letter-spacing: 1px;
   margin: 6px;
   padding: 6px;
-  font-family: 'Sail', cursive;
-  background: linear-gradient(to right, rgb(0, 62, 248), rgb(25, 112, 243));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: "Germania One", cursive;
+  color: #024149c9 !important;
 }
 .project .content .detail .tech .techi {
   display: flex;
@@ -929,7 +1051,7 @@ header {
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
-  font-family: 'Monoton', cursive;
+  font-family: "Germania One", cursive;
 }
 .contact-left h2 {
   font-size: 25px;
@@ -937,7 +1059,7 @@ header {
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
-  font-family: 'Germania One', cursive;
+  font-family: "Germania One", cursive;
   color: var(--HeadBg);
 }
 .c-info {
@@ -986,7 +1108,7 @@ header {
   margin: 10px 0;
   padding: 8px;
   width: fit-content;
-  font-family: 'Germania One', cursive;
+  font-family: "Germania One", cursive;
   color: var(--HeadBg);
 }
 form input,
@@ -1059,7 +1181,7 @@ form button:active {
 }
 @media (max-width: 490px) {
   .contact-left h1 {
-    font-size: 21px;
+    font-size: 28px;
   }
 }
 /* end copy right */
