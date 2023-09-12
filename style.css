@@ -508,6 +508,15 @@ header {
   .Home {
     gap: 12rem;
   }
+  .box{
+    width: 520px; height: 520px;
+  }
+  .home .greet h1{
+    font-size: 69px;
+  }
+  .home .greet h3{
+    font-size: 42px;
+  }
 }
 .home .greet p {
   font-size: 20px;
