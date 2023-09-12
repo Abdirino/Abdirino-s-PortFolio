@@ -556,6 +556,7 @@ header {
 @media (max-width: 1070px) {
   .Home {
     flex-wrap: wrap;
+    gap: 1rem;
   }
   .home .Home .greet {
     font-weight: bold;
@@ -567,8 +568,14 @@ header {
     text-align: center;
     flex-direction: column;
   }
+  .box{
+    width: 220px; height: 220px;
+  }
 }
 @media (max-width: 990px) {
+  .home .greet{
+    padding-top: 40px !important;
+  }
   .home .greet h3 {
     font-size: 22px;
   }
@@ -1057,7 +1064,7 @@ header {
   flex: 1 1 500px;
 }
 .contact-left h1 {
-  font-size: 29px;
+  font-size: 49px;
   margin: 10px 0;
   padding: 15px 0;
   width: fit-content;
@@ -1191,7 +1198,7 @@ form button:active {
 }
 @media (max-width: 490px) {
   .contact-left h1 {
-    font-size: 28px;
+    font-size: 38px;
   }
 }
 /* end copy right */
