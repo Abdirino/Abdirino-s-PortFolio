@@ -468,7 +468,7 @@ header {
   position: relative;
   font-size: 2em;
   text-align: center;
-  color: var(--HeadBg);
+  color: aqua;
   font-weight: 600;
   font-family: "Germania One", cursive;
   letter-spacing: 0.06em;
@@ -479,7 +479,7 @@ header {
   position: relative;
   font-size: 0.65em !important;
   text-align: center;
-  color: var(--textColor);
+  color: aqua;
   font-weight: 300;
   font-family: "Germania One", cursive;
   letter-spacing: 0.06em;
