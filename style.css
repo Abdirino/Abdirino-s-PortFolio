@@ -332,6 +332,7 @@ header {
   justify-content: center;
   align-items: center;
   background: var(--PrimaryBg);
+  overflow: hidden;
   /* -webkit-animation: color-change-3x 4s linear infinite alternate both;
   animation: color-change-3x 4s linear infinite alternate both; */
 }
