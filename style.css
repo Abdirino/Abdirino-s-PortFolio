@@ -610,6 +610,16 @@ header {
     font-size: 14px;
     font-weight: 450;
   }
+  .box h2{
+    font-size: 1.2em;
+  }
+  .box span{
+    font-size: 0.45em;
+  }
+  .box a{
+    padding: 6px 15px;
+    font-size: 0.65em;
+  }
 }
 
 /* end home sec */
@@ -691,7 +701,7 @@ header {
   font-family: "Germania One", cursive;
   font-size: 18px;
   border: 2px solid var(--HeadBg);
-  margin: 22px 24px;
+  margin: 21px 30px;
   color: var(--HeadBg);
   font-weight: bold;
   transition: 0.3s ease;
@@ -704,7 +714,7 @@ header {
 }
 .about .img {
   padding: 2rem;
-  flex: 1 1 450px;
+  flex: 1 1 400px;
 }
 .about .img img {
   border-radius: 5px;
@@ -852,6 +862,7 @@ header {
   font-family: "Poppins", sans-serif;
   color: var(--NavBg);
   font-size: 12px;
+  letter-spacing: 0.4px;
 }
 .p-lang i {
   font-size: 42px;
@@ -871,6 +882,9 @@ header {
   }
   .service .contents .card {
     padding: 14px;
+  }
+  .p-lang .class p{
+    font-size: 10px;
   }
 }
 
